@@ -1,0 +1,61 @@
+/* cyrillic */
+@font-face {
+    font-family: 'mont';
+    src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'mont' !important;
+    transition: all 0.5s;
+}
+
+/* *{
+    outline: red 1px solid;
+} */
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.3vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dca54c;
+}
+
+
+section {
+    min-height: 100vh;
+    min-width: 99vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secTitle {
+    position: relative;
+}
+
+.secTitle::after {
+    content: "";
+    height: 60%;
+    width: 85%;
+    background-color: #bd7c40;
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    z-index: -20;
+}
