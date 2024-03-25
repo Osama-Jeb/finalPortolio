@@ -11,12 +11,13 @@ const Navbar = () => {
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <ul tabIndex={0} className="menu menu-sm bg-[#616161] backdrop-blur-md mt-2 dropdown-content z-[1] gap-2 rounded-2xl w-52">
                             {
                                 links.map((link, index) =>
                                     <li>
                                         <a href={`#${link.toLowerCase()}`}>
-                                            <button className="btn btn-outline rounded-xl text-white btn-xs sm:btn-sm md:btn-md">{link}</button>
+                                            <button className="btn btn-outline rounded-xl text-white">{link}
+                                            </button>
                                         </a>
                                     </li>
                                 )
@@ -26,7 +27,7 @@ const Navbar = () => {
                     <a href="#hero" className="flex items-center gap-3">
 
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                            width="4vw" height="4vw" viewBox="0 0 256.000000 227.000000"
+                            className="w-8vw sm:w-5vw" viewBox="0 0 256.000000 227.000000"
                             preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,227.000000) scale(0.100000,-0.100000)"
                                 fill="#000000" stroke="none">
@@ -77,7 +78,8 @@ l-108 0 -36 -75 c-67 -143 -188 -232 -347 -256 -187 -29 -373 70 -459 243 -18
                         links.map((link, index) =>
                             <>
                                 <a href={`#${link.toLowerCase()}`}>
-                                    <button className="btn btn-outline rounded-xl text-white btn-xs sm:btn-sm md:btn-md">{link}</button>
+                                    <button className="btn btn-outline rounded-xl text-white btn-xs sm:btn-sm md:btn-md">{link}
+                                    </button>
                                 </a>
                             </>
                         )

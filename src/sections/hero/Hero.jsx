@@ -1,6 +1,7 @@
 import logo from "../../assets/images/skills/javascript-svgrepo-com.svg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
     const langs = ['javascript', 'php', 'python']
@@ -29,28 +30,48 @@ const Hero = () => {
 
     return (
         <section id="hero">
-            <div className="flex items-center justify-between w-[90vw]">
+            <div className="flex items-center gap-5 flex-col text-center sm:flex-row sm:text-start sm:text-5xl text-3xl justify-between w-[90vw]">
                 <div>
-                    <p className="text-4xl font-bold tracking-wide">Hello, <br />
+                    <p className=" font-bold tracking-wide leading-relaxed">Hello, <br />
                         I'm <span className="text-[#FFA54F]">OUSSAMA,</span>
                         <br />
-                        I'm a Web Developer
+                        And I'm a &nbsp;
+                        <br className="" />
+                        <TypeAnimation
+                            sequence={[
+                                // Same substring at the start will only be typed out once, initially
+                                'Web Developer',
+                                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                'Problem Solver',
+                                1000,
+                                'Quick Learner',
+                                1000,
+                                'Hard Worker',
+                                1000
+                            ]}
+                            wrapper="span"
+                            speed={50}
+                            style={{ display: 'flex' }}
+                            repeat={Infinity}
+                            className="text-[#FFA54F]"
+                            deletionSpeed={15}
+                        />
 
                     </p>
-                    <div className="flex items-center gap-5 mt-5 text-4xl">
+                    <div className="flex items-center justify-center gap-5 mt-5 sm:text-5xl text-3xl">
                         {
-                            socials.map(social => 
-                            <>
-                                <a href={social.link} className="hover:scale-125" target="_blank" rel="noreferrer">
-                                    {social.icon}
-                                </a>
-                            </>
+                            socials.map(social =>
+                                <>
+                                    <a href={social.link} className="hover:scale-125" target="_blank" rel="noreferrer">
+                                        {social.icon}
+                                    </a>
+                                </>
                             )
                         }
 
                     </div>
                 </div>
-                <div>
+                <div className="text-start">
                     <div className="px-4 border-t-2 border-l border-r border-gray-600 lg:px-8 py-5"
                         style={{ borderTopColor: "#FFA54F" }}>
                         <div className="flex space-x-2">

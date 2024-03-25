@@ -1,7 +1,78 @@
 import Project from "./components/Project";
-import ygoPal from "../../assets/images/projects/ygoPalette/ygoPalette1.png"
+import ygoPalette1 from "../../assets/images/projects/ygoPalette/ygoPalette1.png"
+import ygoPalette2 from "../../assets/images/projects/ygoPalette/ygoPalette2.png"
+import ygoPalette3 from "../../assets/images/projects/ygoPalette/ygoPalette3.png"
+import ygoPalette4 from "../../assets/images/projects/ygoPalette/ygoPalette4.png"
+import ygoGif from "../../assets/images/projects/ygoPalette/ygoPalette.gif"
 
 const Projects = () => {
+
+    const projs = [
+        {
+            name: 'YGO-Palette Generator',
+            github: 'https://github.com/Osama-Jeb/ygo-palette',
+            website: 'https://ygo-palette-client.vercel.app/',
+            desc: 'This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.',
+            techs: [
+                {
+                    name: 'React',
+                    color: 'bg-[#00d8ff]',
+                },
+                {
+                    name: 'Express',
+                    color: "bg-[#f7e025]",
+                },
+                {
+                    name: 'Tailwind',
+                    color: 'bg-[#38bdf8]'
+                },
+            ],
+            imgs: [ygoPalette1, ygoPalette2, ygoPalette3, ygoPalette4]
+        },
+        {
+            name: 'ygo-Palette Generator',
+            github: 'https://github.com/Osama-Jeb/ygo-palette',
+            website: 'https://ygo-palette-client.vercel.app/',
+            desc: 'This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.',
+            techs: [
+                {
+                    name: 'React',
+                    color: 'bg-[#00d8ff]',
+                },
+                {
+                    name: 'Express',
+                    color: "bg-[#f7e025]",
+                },
+                {
+                    name: 'Tailwind',
+                    color: 'bg-[#38bdf8]'
+                },
+            ],
+            imgs: [ygoPalette1, ygoPalette2, ygoPalette3, ygoPalette4]
+
+        },
+        {
+            name: 'ygo-Palette Generator',
+            github: 'https://github.com/Osama-Jeb/ygo-palette',
+            website: 'https://ygo-palette-client.vercel.app/',
+            desc: 'This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.',
+            techs: [
+                {
+                    name: 'React',
+                    color: 'bg-[#00d8ff]',
+                },
+                {
+                    name: 'Express',
+                    color: "bg-[#f7e025]",
+                },
+                {
+                    name: 'Tailwind',
+                    color: 'bg-[#38bdf8]'
+                },
+            ],
+            imgs: [ygoPalette1, ygoPalette2, ygoPalette3, ygoPalette4]
+        },
+    ]
     return (
         <section id="projects" className="">
             <div>
@@ -10,9 +81,9 @@ const Projects = () => {
                 </div>
                 <div className="w-[99vw] flex flex-col">
                     {
-                        [1, 2, 3].map((proj, index) =>
+                        projs.map((proj, index) =>
                             <>
-                                <Project img={ygoPal} index={index} />
+                                <Project img={ygoGif} proj={proj} index={index} />
                             </>
                         )
                     }
