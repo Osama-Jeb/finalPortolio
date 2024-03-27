@@ -6,7 +6,7 @@ const Project = (props) => {
     return (
         <div className={`mb-12 flex text-center text-balance sm:text-start items-center flex-col sm:flex-row gap-5 p-12 ${reverse ? 'sm:flex-row-reverse' : ''}`}>
             <div className="shadow-2xl rounded-2xl">
-                <img className="rounded-2xl" src={props.img} alt="" />
+                <img className="rounded-2xl" src={proj.preview} alt="" />
             </div>
             <div className={`flex flex-col gap-3 ${reverse ? '' : 'sm:items-end sm:text-end'}`}>
                 <p className="text-3xl font-bold">{proj.name}</p>

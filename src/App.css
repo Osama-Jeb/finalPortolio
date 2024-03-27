@@ -11,12 +11,15 @@ html {
 
 body {
     font-family: 'mont' !important;
-    transition: all 0.5s;
 }
 
 /* *{
     outline: red 1px solid;
 } */
+
+a{
+    transition: all 0.5s;
+}
 
 
 

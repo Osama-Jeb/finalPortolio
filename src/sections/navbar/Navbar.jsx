@@ -1,7 +1,7 @@
 
 const Navbar = () => {
 
-    const links = ["About", "Projects", "Skills", "Contact"];
+    const links = ["About", "Skills", "Projects", "Contact"];
 
     return (
         <>
@@ -26,8 +26,9 @@ const Navbar = () => {
                     </div>
                     <a href="#hero" className="flex items-center gap-3">
 
+
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                            className="w-8vw sm:w-5vw" viewBox="0 0 256.000000 227.000000"
+                            className="hidden sm:block" viewBox="0 0 256.000000 227.000000"
                             preserveAspectRatio="xMidYMid meet">
                             <g transform="translate(0.000000,227.000000) scale(0.100000,-0.100000)"
                                 fill="#000000" stroke="none">
@@ -66,10 +67,8 @@ l-108 0 -36 -75 c-67 -143 -188 -232 -347 -256 -187 -29 -373 70 -459 243 -18
                             </g>
                         </svg>
 
-                        <span>
-                            OUSSAMA JEBRANE
-                        </span>
 
+                            OUSSAMA JEBRANE
                     </a>
                 </div>
 

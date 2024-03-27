@@ -31,15 +31,14 @@ const Hero = () => {
     return (
         <section id="hero">
             <div className="flex items-center gap-5 flex-col text-center sm:flex-row sm:text-start sm:text-5xl text-3xl justify-between w-[90vw]">
-                <div className="w-[50%]">
-                    <p className=" font-bold tracking-wide leading-relaxed">Hello, <br />
+                <div className="w-[80%] sm:w-[50%]">
+                    <p className="font-bold tracking-wide leading-relaxed">Hello, <br />
                         I'm <span className="text-[#FFA54F]">OUSSAMA,</span>
                         <br />
                         And I'm a &nbsp;
                         <br className="" />
                         <TypeAnimation
                             sequence={[
-
                                 'Web Developer',
                                 1000, 
                                 'Problem Solver',
@@ -49,11 +48,11 @@ const Hero = () => {
                                 'Hard Worker',
                                 1000
                             ]}
-                            wrapper="span"
+                            wrapper="p"
                             speed={50}
                             style={{ display: 'inline-block' }}
                             repeat={Infinity}
-                            className="text-[#FFA54F]"
+                            className="text-[#FFA54F] text-start w-[100%]"
                             deletionSpeed={15}
                         />
 
@@ -62,7 +61,7 @@ const Hero = () => {
                         {
                             socials.map(social =>
                                 <>
-                                    <a href={social.link} className="hover:scale-125" target="_blank" rel="noreferrer">
+                                    <a href={social.link} className="hover:scale-125 hover:text-[#FFA54F]" target="_blank" rel="noreferrer">
                                         {social.icon}
                                     </a>
                                 </>

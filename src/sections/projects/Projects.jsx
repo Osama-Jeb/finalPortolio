@@ -1,8 +1,4 @@
 import Project from "./components/Project";
-import ygoPalette1 from "../../assets/images/projects/ygoPalette/ygoPalette1.png"
-import ygoPalette2 from "../../assets/images/projects/ygoPalette/ygoPalette2.png"
-import ygoPalette3 from "../../assets/images/projects/ygoPalette/ygoPalette3.png"
-import ygoPalette4 from "../../assets/images/projects/ygoPalette/ygoPalette4.png"
 import ygoGif from "../../assets/images/projects/ygoPalette/ygoPalette.gif"
 
 const Projects = () => {
@@ -27,7 +23,7 @@ const Projects = () => {
                     color: 'bg-[#38bdf8]'
                 },
             ],
-            imgs: [ygoPalette1, ygoPalette2, ygoPalette3, ygoPalette4]
+            preview: ygoGif
         },
         {
             name: 'ygo-Palette Generator',
@@ -48,7 +44,7 @@ const Projects = () => {
                     color: 'bg-[#38bdf8]'
                 },
             ],
-            imgs: [ygoPalette1, ygoPalette2, ygoPalette3, ygoPalette4]
+            preview: ygoGif
 
         },
         {
@@ -70,7 +66,7 @@ const Projects = () => {
                     color: 'bg-[#38bdf8]'
                 },
             ],
-            imgs: [ygoPalette1, ygoPalette2, ygoPalette3, ygoPalette4]
+            preview: ygoGif
         },
     ]
     return (
@@ -83,7 +79,7 @@ const Projects = () => {
                     {
                         projs.map((proj, index) =>
                             <>
-                                <Project img={ygoGif} proj={proj} index={index} />
+                                <Project proj={proj} index={index} />
                             </>
                         )
                     }
