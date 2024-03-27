@@ -1,7 +1,7 @@
 
 const Navbar = () => {
 
-    const links = ["About", "Projects", "Contact"];
+    const links = ["About", "Projects", "Skills", "Contact"];
 
     return (
         <>

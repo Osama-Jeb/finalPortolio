@@ -4,9 +4,9 @@ import { HiOutlineMail } from "react-icons/hi";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
-    const langs = ['javascript', 'php', 'python']
+    const langs = ['JavaScript', 'php', 'Python']
 
-    const skills = ['react', 'tailwind', 'alpinejs', 'laravel', 'livewire'];
+    const skills = ['React', 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire'];
 
     const traite = ['hardWorker', 'quickLearner', 'problemSolver'];
 
@@ -31,7 +31,7 @@ const Hero = () => {
     return (
         <section id="hero">
             <div className="flex items-center gap-5 flex-col text-center sm:flex-row sm:text-start sm:text-5xl text-3xl justify-between w-[90vw]">
-                <div>
+                <div className="w-[50%]">
                     <p className=" font-bold tracking-wide leading-relaxed">Hello, <br />
                         I'm <span className="text-[#FFA54F]">OUSSAMA,</span>
                         <br />
@@ -39,9 +39,9 @@ const Hero = () => {
                         <br className="" />
                         <TypeAnimation
                             sequence={[
-                                // Same substring at the start will only be typed out once, initially
+
                                 'Web Developer',
-                                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                                1000, 
                                 'Problem Solver',
                                 1000,
                                 'Quick Learner',
@@ -51,7 +51,7 @@ const Hero = () => {
                             ]}
                             wrapper="span"
                             speed={50}
-                            style={{ display: 'flex' }}
+                            style={{ display: 'inline-block' }}
                             repeat={Infinity}
                             className="text-[#FFA54F]"
                             deletionSpeed={15}
@@ -76,7 +76,7 @@ const Hero = () => {
                         style={{ borderTopColor: "#FFA54F" }}>
                         <div className="flex space-x-2">
                             <img src={logo} width={20} alt="" />
-                            <p>Me.js</p>
+                            <p className="text-xl">Me.js</p>
                         </div>
                     </div>
 

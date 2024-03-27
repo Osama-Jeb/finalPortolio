@@ -6,7 +6,9 @@ import Navbar from './sections/navbar/Navbar'
 import CanvasBackground from './CanvasBackground'
 import About from './sections/about/About'
 import Projects from './sections/projects/Projects'
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
+import Contact from './sections/contact/Contact'
+import Skills from './sections/skills/Skills'
 function App() {
 
   return (
@@ -33,7 +35,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skills />
       <Projects />
+      <Contact />
+      <SpeedInsights />
     </>
   )
 }
