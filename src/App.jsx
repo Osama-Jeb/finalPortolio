@@ -9,10 +9,13 @@ import Projects from './sections/projects/Projects'
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import Contact from './sections/contact/Contact'
 import Skills from './sections/skills/Skills'
+import Loading from './Loading'
 function App() {
+
 
   return (
     <>
+      <Loading />
       <CanvasBackground />
       <AnimatedCursor
         innerSize={8}
@@ -30,7 +33,6 @@ function App() {
           border: '3px solid #FFA54F',
         }}
         trailingSpeed={5}
-
       />
       <Navbar />
       <Hero />
