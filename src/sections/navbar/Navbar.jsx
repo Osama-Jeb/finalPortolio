@@ -1,8 +1,9 @@
+import { motion, useScroll } from "framer-motion";
 
 const Navbar = () => {
+    const { scrollYProgress } = useScroll();
 
     const links = ["About", "Skills", "Projects", "Contact"];
-
     return (
         <>
             <nav className="navbar bg-[#61616180] backdrop-blur-md sticky top-0 right-0 z-10 px-4">
@@ -68,7 +69,7 @@ l-108 0 -36 -75 c-67 -143 -188 -232 -347 -256 -187 -29 -373 70 -459 243 -18
                         </svg>
 
 
-                            OUSSAMA JEBRANE
+                        OUSSAMA JEBRANE
                     </a>
                 </div>
 
@@ -84,7 +85,13 @@ l-108 0 -36 -75 c-67 -143 -188 -232 -347 -256 -187 -29 -373 70 -459 243 -18
                         )
                     }
                 </div>
+            <motion.div
+                style={{ scaleX: scrollYProgress }}
+                className="bg-[#FFA54F] z-50 fixed bottom-0 left-0 h-[0.5vh] w-full">
+
+            </motion.div>
             </nav>
+
         </>
     )
 }

@@ -52,7 +52,7 @@ const Hero = () => {
                             speed={50}
                             style={{ display: 'inline-block' }}
                             repeat={Infinity}
-                            className="text-[#FFA54F] text-start w-[100%]"
+                            className="text-[#FFA54F] w-[100%]"
                             deletionSpeed={15}
                         />
 

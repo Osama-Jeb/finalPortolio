@@ -1,7 +1,8 @@
 const Loading = () => {
+    
     return (
         <>
-            <div className='absolute fade w-[100vw] h-[100vh] flex items-center justify-center top-0 left-0 bg-[#313131]'>
+            <div className='fixed fade w-[99.5vw] h-[100vh] flex items-center justify-center top-0 left-0 bg-[#313131]'>
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="60%" height="60%" viewBox="0 0 256.000000 227.000000" preserveAspectRatio="xMidYMid meet">
                     <g transform="translate(0.000000,227.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                         <path d="M767 1998 c-14 -13 -119 -185 -233 -383 -177 -306 -208 -366 -208

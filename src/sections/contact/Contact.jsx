@@ -5,7 +5,7 @@ const Contact = () => {
                 <div className="mb-12 flex items-center justify-center">
                     <p className="secTitle w-fit font-bold underline text-4xl">Contact</p>
                 </div>
-                <div className="flex items-center gap-5 justify-around flex-col-reverse sm:flex-row">
+                <div className="flex items-center gap-5 justify-around flex-col sm:flex-row">
                     <div className="sm:w-[45%] sm:p-0 p-5 text-center">
                         <p className="text-balance leading-relaxed tracking-wide text-2xl">Feel free to contact me anytime. Wether it's about an opportunity or a project or just for a chat to get to know me. </p>
                     </div>

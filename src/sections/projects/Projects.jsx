@@ -70,7 +70,7 @@ const Projects = () => {
         },
     ]
     return (
-        <section id="projects" className="">
+        <section id="projects" className="mt-12">
             <div>
                 <div className="mb-12 flex items-center justify-center">
                     <p className="secTitle w-fit font-bold underline text-4xl">Projects</p>
