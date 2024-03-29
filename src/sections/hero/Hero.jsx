@@ -48,7 +48,7 @@ const Hero = () => {
                                 'Hard Worker',
                                 1000
                             ]}
-                            wrapper="p"
+                            wrapper="span"
                             speed={50}
                             style={{ display: 'inline-block' }}
                             repeat={Infinity}
