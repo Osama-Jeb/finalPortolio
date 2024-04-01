@@ -22,7 +22,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="hidden sm:block">
-                        <img src={prof} className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer" width={250} alt="" />
+                        <img src={prof} className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer" loading="lazy" width={250} alt="" />
                     </div>
                 </div>
             </div>

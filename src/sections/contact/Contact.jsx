@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
 
@@ -29,13 +31,33 @@ const Contact = () => {
             console.error('Error:', error);
         }
     };
+
+    const socials = [
+        {
+            link: 'https://github.com/Osama-Jeb',
+            icon: <FaGithub />
+            ,
+        },
+        {
+            link: 'https://www.linkedin.com/in/oussama-jebrane',
+            icon: <FaLinkedin />,
+        },
+        {
+            link: 'mailto:oussamajebrane98@gmail.com',
+            icon: <HiOutlineMail />,
+        },
+        {
+            link: 'https://wa.me/212696916944',
+            icon: <FaWhatsapp />,
+        },
+    ]
     return (
         <section id="contact">
-            <div>
+            <div className="min-h-[60vh] w-full flex items-center flex-col justify-evenly">
                 <div className="mb-12 flex items-center justify-center">
                     <p className="secTitle w-fit font-bold underline text-4xl">Contact</p>
                 </div>
-                <div className="flex items-center gap-5 justify-around flex-col sm:flex-row">
+                {/* <div className="flex items-center gap-5 justify-around flex-col sm:flex-row">
                     <div className="sm:w-[45%] sm:p-0 p-5 text-center">
                         <p className="text-balance leading-relaxed tracking-wide text-2xl">Feel free to contact me anytime. Wether it's about an opportunity or a project or just for a chat to get to know me. </p>
                     </div>
@@ -79,6 +101,20 @@ const Contact = () => {
 
 
                     </div>
+                </div> */}
+
+
+                <div className="flex items-center justify-evenly w-[70%] gap-5 mt-12 sm:text-5xl text-4xl">
+                    {
+                        socials.map(social =>
+                            <>
+                                <a href={social.link} className="hover:scale-125 hover:text-[#FFA54F]" target="_blank" rel="noreferrer">
+                                    {social.icon}
+                                </a>
+                            </>
+                        )
+                    }
+
                 </div>
             </div>
         </section>

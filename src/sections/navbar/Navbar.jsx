@@ -4,6 +4,7 @@ const Navbar = () => {
     const { scrollYProgress } = useScroll();
 
     const links = ["About", "Skills", "Projects", "Contact"];
+
     return (
         <>
             <nav className="navbar bg-[#61616180] backdrop-blur-md sticky top-0 right-0 z-10 px-4">
