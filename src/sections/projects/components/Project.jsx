@@ -23,23 +23,47 @@ const Project = (props) => {
                         )
                     }
                 </p>
-                <div className="flex gap-4 mt-5 sm:justify-normal justify-around">
-                    <a
-                        href={proj.website}
-                        target="_blank"
-                        rel="nonreferrer"
-                        className="btn btn-lg btn-neutral btn-outline rounded-2xl">
-                        <FaExternalLinkAlt />
-                        Demo
-                    </a>
-                    <a
-                        href={proj.github}
-                        target="_blank"
-                        rel="nonreferrer"
-                        className="btn btn-lg btn-neutral btn-outline rounded-2xl">
-                        <FaGithub />
-                        Github
-                    </a>
+                <div className="flex items-center gap-4 mt-5 sm:justify-normal justify-around">
+
+                    {
+                        proj.name.includes('LionsGeek') ? (
+                            <div>
+                                <p className="mb-2">Since the project is private, I can't share the code but feel free to check the website or the Association.</p>
+                                <a
+                                    href={"https://lionsgeek.ma/"}
+                                    target="_blank"
+                                    rel="nonreferrer"
+                                    className="btn btn-sm bg-yellow-400 text-black btn-outline rounded-2xl">
+                                    <FaExternalLinkAlt /> Association
+                                </a>
+                                <a
+                                    href={proj.website}
+                                    target="_blank"
+                                    rel="nonreferrer"
+                                    className="ms-2 mt-2 btn btn-neutral btn-outline rounded-2xl">
+                                    <FaExternalLinkAlt /> LionsGeek Manager
+                                </a>
+                            </div>
+                        ) : (
+                            <>
+                                <a 
+                                href={proj.website} 
+                                target="_blank" 
+                                rel="nonreferrer" 
+                                className="btn btn-neutral btn-outline rounded-2xl">
+                                    <FaExternalLinkAlt /> Demo
+                                </a>
+                                <a 
+                                href={proj.github} 
+                                target="_blank" 
+                                rel="nonreferrer" 
+                                className="btn btn-neutral btn-outline rounded-2xl">
+                                    <FaGithub /> Github
+                                </a>
+                            </>
+                        )
+                    }
+
                 </div>
             </div>
         </div>

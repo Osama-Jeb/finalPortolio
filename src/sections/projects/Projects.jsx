@@ -1,9 +1,36 @@
 import Project from "./components/Project";
 import ygoGif from "../../assets/images/projects/ygoPalette/ygoPalette.gif"
+import lionsGif from "../../assets/images/projects/lionsgeek/lionsgeek.gif"
 
 const Projects = () => {
 
     const projs = [
+        {
+            name: 'LionsGeek Management System',
+            github: '',
+            website: 'https://lionsgeek.ma/',
+            desc: 'This private project was built with the goal of managing reservations and appointments for the LionsGeek Association. Using FullCalendar to create and reserve private equipments as well as other functions.',
+            techs: [
+                {
+                    name: 'Livewire',
+                    color: 'bg-[#ff2d20]',
+                },
+                {
+                    name: 'Breeze Auth',
+                    color: 'bg-[#8a94a6]',
+                },
+                {
+                    name: 'FullCalendar',
+                    color: "bg-[#2b5ea4] text-white",
+                },
+                {
+                    name: 'Tailwind',
+                    color: 'bg-[#38bdf8]'
+                },
+            ],
+            preview: lionsGif
+
+        },
         {
             name: 'YGO-Palette Generator',
             github: 'https://github.com/Osama-Jeb/ygo-palette',
@@ -22,52 +49,34 @@ const Projects = () => {
                     name: 'Tailwind',
                     color: 'bg-[#38bdf8]'
                 },
-            ],
-            preview: ygoGif
-        },
-        {
-            name: 'ygo-Palette Generator',
-            github: 'https://github.com/Osama-Jeb/ygo-palette',
-            website: 'https://ygo-palette-client.vercel.app/',
-            desc: 'This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.',
-            techs: [
                 {
-                    name: 'React',
-                    color: 'bg-[#00d8ff]',
-                },
-                {
-                    name: 'Express',
-                    color: "bg-[#f7e025]",
-                },
-                {
-                    name: 'Tailwind',
-                    color: 'bg-[#38bdf8]'
-                },
-            ],
-            preview: ygoGif
-
-        },
-        {
-            name: 'ygo-Palette Generator',
-            github: 'https://github.com/Osama-Jeb/ygo-palette',
-            website: 'https://ygo-palette-client.vercel.app/',
-            desc: 'This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.',
-            techs: [
-                {
-                    name: 'React',
-                    color: 'bg-[#00d8ff]',
-                },
-                {
-                    name: 'Express',
-                    color: "bg-[#f7e025]",
-                },
-                {
-                    name: 'Tailwind',
-                    color: 'bg-[#38bdf8]'
+                    name: 'DaisyUI',
+                    color: 'bg-[#1ad1a5]'
                 },
             ],
             preview: ygoGif
         },
+        // {
+        //     name: 'ygo-Palette Generator',
+        //     github: 'https://github.com/Osama-Jeb/ygo-palette',
+        //     website: 'https://ygo-palette-client.vercel.app/',
+        //     desc: 'This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.',
+        //     techs: [
+        //         {
+        //             name: 'React',
+        //             color: 'bg-[#00d8ff]',
+        //         },
+        //         {
+        //             name: 'Express',
+        //             color: "bg-[#f7e025]",
+        //         },
+        //         {
+        //             name: 'Tailwind',
+        //             color: 'bg-[#38bdf8]'
+        //         },
+        //     ],
+        //     preview: ygoGif
+        // },
     ]
     return (
         <section id="projects" className="mt-12">
