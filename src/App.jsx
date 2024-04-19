@@ -10,9 +10,28 @@ import Contact from './sections/contact/Contact'
 import Skills from './sections/skills/Skills'
 import Loading from './Loading'
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { useEffect } from 'react'
 
 
 function App() {
+
+
+  //TODO To be continued....NEVER
+  // useEffect(() => {
+  //   const loadHandler = () => {
+  //     if (document.readyState == "complete") {
+  //       document.body.style.overflow = "hidden";
+  //     } else {
+  //       document.body.style.overflow = "visible";
+  //     }
+  //   }
+
+  //   window.addEventListener("load", loadHandler)
+
+  //   return () => window.removeEventListener("load", loadHandler)
+  // }, [])
+
+
   return (
     <>
       <Loading />

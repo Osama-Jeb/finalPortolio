@@ -17,9 +17,8 @@ const Navbar = () => {
                             {
                                 links.map((link, index) =>
                                     <li>
-                                        <a href={`#${link.toLowerCase()}`}>
-                                            <button className="btn btn-outline rounded-xl text-white">{link}
-                                            </button>
+                                        <a href={`#${link.toLowerCase()}`} className="btn btn-outline rounded-xl text-white">
+                                            {link}
                                         </a>
                                     </li>
                                 )
@@ -86,11 +85,11 @@ l-108 0 -36 -75 c-67 -143 -188 -232 -347 -256 -187 -29 -373 70 -459 243 -18
                         )
                     }
                 </div>
-            <motion.div
-                style={{ scaleX: scrollYProgress }}
-                className="bg-[#FFA54F] z-50 fixed bottom-0 left-0 h-[0.5vh] w-full">
+                <motion.div
+                    style={{ scaleX: scrollYProgress }}
+                    className="bg-[#FFA54F] z-50 fixed bottom-0 left-0 h-[0.5vh] w-full">
 
-            </motion.div>
+                </motion.div>
             </nav>
 
         </>

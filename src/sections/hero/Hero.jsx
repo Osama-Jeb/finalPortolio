@@ -10,7 +10,7 @@ const Hero = () => {
 
     const traite = ['hardWorker', 'quickLearner', 'problemSolver'];
 
-    const prm = ['this.hardWorker', 'quickLearner'];
+    const prm = ['hardWorker', 'quickLearner'];
 
     const socials = [
         {
