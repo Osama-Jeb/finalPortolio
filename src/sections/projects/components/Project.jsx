@@ -1,6 +1,10 @@
+import { useTranslation } from "react-i18next"
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"
 
 const Project = (props) => {
+
+    const [t, i18n] = useTranslation("global");
+
     const proj = props.proj
     const reverse = props.index % 2 === 0
     return (
@@ -12,7 +16,7 @@ const Project = (props) => {
                 <p className="text-3xl font-bold">{proj.name}</p>
 
                 <p>{proj.desc}</p>
-                <p className="flex flex-wrap gap-3 items-center">Made with:
+                <p className="flex flex-wrap gap-3 items-center">{t("projects.made")}:
                     {
                         proj.techs.map((tech, index) =>
                             <>
@@ -28,7 +32,7 @@ const Project = (props) => {
                     {
                         proj.name.includes('LionsGeek') ? (
                             <div>
-                                <p className="mb-2">Since the project is private, I can't share the code but feel free to check the website or the Association.</p>
+                                <p className="mb-2">{t("projects.lionsNote")}</p>
                                 <a
                                     href={"https://lionsgeek.ma/"}
                                     target="_blank"

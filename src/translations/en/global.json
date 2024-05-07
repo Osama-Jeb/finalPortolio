@@ -1,0 +1,20 @@
+{
+    "hero" : {
+        "hello" : "Hello",
+        "I" : "I'm",
+        "and" : "And I'm a",
+        "me": "Me"
+
+    },
+    "about" : {
+        "title" : "About Me",
+        "first" : "I am a professional and enthusiastic programmer in my daily life. I love to learn and explore new technologies and am passionate about problem-solving.",
+        "second" : "My core skill is based on JavaScript. I am available for any kind of job opportunity that suits my skills and interests."
+    },
+    "projects" : {
+        "made" : "Made with",
+        "lionsNote" : "Since the project is private, I can't share the code but feel free to check the website or the Association.",
+        "lionsDesc" : "This private project was built with the goal of managing reservations and appointments for the LionsGeek Association. Using FullCalendar to create and reserve private equipments as well as other functions.",
+        "paletteDesc" : "This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing."
+    } 
+}

@@ -1,15 +1,18 @@
 import Project from "./components/Project";
 import ygoGif from "../../assets/images/projects/ygoPalette/ygoPalette.gif"
 import lionsGif from "../../assets/images/projects/lionsgeek/lionsgeek.gif"
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+
+    const [t, i18n] = useTranslation("global");
 
     const projs = [
         {
             name: 'LionsGeek Management System',
             github: '',
             website: 'https://lionsgeek.ma/',
-            desc: 'This private project was built with the goal of managing reservations and appointments for the LionsGeek Association. Using FullCalendar to create and reserve private equipments as well as other functions.',
+            desc: t("projects.lionsDesc"),
             techs: [
                 {
                     name: 'Livewire',
@@ -35,7 +38,7 @@ const Projects = () => {
             name: 'YGO-Palette Generator',
             github: 'https://github.com/Osama-Jeb/ygo-palette',
             website: 'https://ygo-palette-client.vercel.app/',
-            desc: 'This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.',
+            desc: t("projects.paletteDesc"),
             techs: [
                 {
                     name: 'React',

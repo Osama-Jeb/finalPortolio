@@ -10,32 +10,19 @@ import Contact from './sections/contact/Contact'
 import Skills from './sections/skills/Skills'
 import Loading from './Loading'
 import { SpeedInsights } from "@vercel/speed-insights/react"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 
 function App() {
 
-
-  //TODO To be continued....NEVER
-  // useEffect(() => {
-  //   const loadHandler = () => {
-  //     if (document.readyState == "complete") {
-  //       document.body.style.overflow = "hidden";
-  //     } else {
-  //       document.body.style.overflow = "visible";
-  //     }
-  //   }
-
-  //   window.addEventListener("load", loadHandler)
-
-  //   return () => window.removeEventListener("load", loadHandler)
-  // }, [])
-
+  const [theme, setTheme] = useState('black');
 
   return (
     <>
-      <Loading />
+    <div data-theme={theme} className='text-base-content'>
+      {/* <Loading /> */}
       <CanvasBackground />
+
       <div className='sm:block hidden'>
         <AnimatedCursor
           innerSize={8}
@@ -55,12 +42,13 @@ function App() {
           trailingSpeed={5}
         />
       </div>
-      <Navbar />
+      <Navbar setTheme={setTheme}/>
       <Hero />
       <About />
       <Skills />
       <Projects />
       <Contact />
+    </div>
       <SpeedInsights />
     </>
   )

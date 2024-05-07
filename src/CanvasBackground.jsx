@@ -76,7 +76,7 @@ const CanvasBackground = () => {
 
     }, []); // Empty dependency array to run effect only once on component mount
 
-    return <canvas ref={canvasRef} className='fixed top-0 right-0 -z-10' />;
+    return <canvas ref={canvasRef} className='fixed top-0 right-0' />;
 };
 
 export default CanvasBackground;

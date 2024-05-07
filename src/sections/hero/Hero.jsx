@@ -1,10 +1,11 @@
+import { useTranslation } from "react-i18next";
 import logo from "../../assets/images/skills/javascript-svgrepo-com.svg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
-    const langs = ['JavaScript', 'php', 'Python']
+    const langs = ['JavaScript', 'TypeScript', 'php', 'Python']
 
     const skills = ['React', 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire'];
 
@@ -28,14 +29,16 @@ const Hero = () => {
         },
     ]
 
+    const [t, i18n] = useTranslation("global");
+
     return (
         <section id="hero">
             <div className="flex items-center gap-5 flex-col text-center sm:flex-row sm:text-start sm:text-5xl text-3xl justify-between w-[90vw]">
                 <div className="w-[80%] sm:w-[50%]">
-                    <p className="font-bold tracking-wide leading-relaxed">Hello, <br />
-                        I'm <span className="text-[#FFA54F]">OUSSAMA,</span>
+                    <p className="font-bold tracking-wide leading-relaxed">{t("hero.hello")}, <br />
+                        {t("hero.I")} <span className="text-[#FFA54F]">OUSSAMA JEBRANE</span>
                         <br />
-                        And I'm a &nbsp;
+                        {/* {t("hero.and")} &nbsp;
                         <br className="" />
                         <TypeAnimation
                             sequence={[
@@ -54,7 +57,7 @@ const Hero = () => {
                             repeat={Infinity}
                             className="text-[#FFA54F] w-[100%]"
                             deletionSpeed={15}
-                        />
+                        /> */}
 
                     </p>
                     <div className="flex items-center justify-center gap-5 mt-5 sm:text-5xl text-3xl">
@@ -75,7 +78,7 @@ const Hero = () => {
                         style={{ borderTopColor: "#FFA54F" }}>
                         <div className="flex space-x-2">
                             <img src={logo} width={20} alt="" />
-                            <p className="text-xl">Me.js</p>
+                            <p className="text-xl">{t("hero.me")}.js</p>
                         </div>
                     </div>
 

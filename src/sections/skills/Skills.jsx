@@ -1,6 +1,7 @@
 import python from "../../assets/images/skills/python-svgrepo-com.svg"
 import javascript from "../../assets/images/skills/javascript-svgrepo-com.svg"
 import php from "../../assets/images/skills/php-svgrepo-com.svg"
+import typescript from "../../assets/images/skills/typescript-svgrepo-com.svg"
 
 import react from "../../assets/images/skills/react-svgrepo-com.svg"
 import laravel from "../../assets/images/skills/laravel-svgrepo-com.svg"
@@ -20,6 +21,11 @@ const Skills = () => {
             name: 'javascript',
             image: javascript,
             bg: 'border-[#f7e025] shadow-[#f7e025]'
+        },
+        {
+            name: 'typescript',
+            image: typescript,
+            bg: 'border-[#3178c6] shadow-[#3178c6]'
         },
         {
             name: 'python',
@@ -99,7 +105,7 @@ const Skills = () => {
                 <div className="flex flex-col gap-6">
                     {categories.map((category, index) => (
                         <div key={index} className="mt-7">
-                            <p className="text-2xl mb-2">{category.title}:</p>
+                            <p className="text-3xl tracking-wider font-bold mb-2">{category.title}:</p>
                             <motion.ul
                                 initial="hidden"
                                 whileInView="visible"
@@ -120,7 +126,7 @@ const Skills = () => {
                                     <motion.li
                                         variants={item}
                                         key={i}
-                                        className={`btn btn-lg ${skill.bg} mt-2 shadow-md rounded-2xl`}
+                                        className={`btn btn-lg tracking-wider ${skill.bg} mt-2 shadow-md rounded-2xl`}
                                     >
                                         <img src={skill.image} width={25} alt="" />
                                         {skill.name}
