@@ -13,6 +13,7 @@ import git from "../../assets/images/skills/Git.svg"
 import github from "../../assets/images/skills/GitHub.svg"
 
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 const Skills = () => {
 
@@ -96,11 +97,13 @@ const Skills = () => {
         }
     };
 
+    const [t, i18n] = useTranslation("global");
+
     return (
         <section id="skills" className="mt-12 mb-12 sm:mt-0 sm:mb-0 p-5" >
             <div>
                 <div className="mb-12 flex items-center justify-center">
-                    <p className="secTitle w-fit font-bold underline text-4xl">Skills</p>
+                    <p className="secTitle w-fit font-bold underline text-4xl">{t("skills.title")}</p>
                 </div>
                 <div className="flex flex-col gap-6">
                     {categories.map((category, index) => (

@@ -1,15 +1,12 @@
 import { motion, useScroll } from "framer-motion";
 import Logo from "../../Logo";
-import { FaAngleDown } from "react-icons/fa";
 import LanguageSwapBtn from "../../LanguageSwapBtn";
+import ThemeSwap from "../../ThemeSwap";
 
 
 
 const Navbar = (props) => {
     const { scrollYProgress } = useScroll();
-    
-    const themes = ['black', 'forest', 'synthwave', 'halloween', 'aqua', 'dracula', 'business', 'coffee', 'night', 'sunset'];
-
 
     return (
         <>
@@ -21,23 +18,7 @@ const Navbar = (props) => {
 
                     <LanguageSwapBtn />
 
-                    <div className="dropdown ">
-                        <div tabIndex={0} role="button" className="btn">
-                            Themes
-                            <FaAngleDown />
-
-                        </div>
-                        <ul tabIndex={0} className="dropdown-content z-[1] shadow-2xl bg-base-300 rounded-box">
-                            {
-                                themes.map((theme, index) => (
-                                    <li><input type="radio" name="theme-dropdown" className="theme-controller btn btn-sm btn-block btn-ghost justify-start" aria-label={theme} value={theme}
-                                        onClick={() => { props.setTheme(theme) }}
-                                    /></li>
-
-                                ))
-                            }
-                        </ul>
-                    </div>
+                    <ThemeSwap setTheme={props.setTheme} />
 
                 </div>
                 <motion.div

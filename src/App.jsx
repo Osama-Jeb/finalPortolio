@@ -11,6 +11,7 @@ import Skills from './sections/skills/Skills'
 import Loading from './Loading'
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { useEffect, useState } from 'react'
+import Facts from './sections/facts/Facts'
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
       <About />
       <Skills />
       <Projects />
+      {/* <Facts /> */}
       <Contact />
     </div>
       <SpeedInsights />
