@@ -15,9 +15,10 @@
     },
     "projects": {
         "title" : "Projets",
-        "made": "Fabriqué avec",
+        "made": "Crée avec",
         "lionsNote": "Comme le projet est privé, je ne peux pas partager le code, mais n'hésitez pas à consulter le site Web ou l'Association.",
         "lionsDesc": "Ce projet privé a été construit dans le but de gérer les réservations et les rendez-vous pour l'Association LionsGeek. Utilisation de FullCalendar pour créer et réserver des équipements privés ainsi que d'autres fonctions.",
-        "paletteDesc": "Ce site Web génère une palette de couleurs aléatoire basée sur les cartes Yu-Gi-Oh. Dans ce projet, j'ai appris sur les API et l'importance du partage des ressources inter-origines (CORS)."
+        "paletteDesc": "Ce site Web génère une palette de couleurs aléatoire basée sur les cartes Yu-Gi-Oh. Dans ce projet, j'ai appris sur les API et l'importance du partage des ressources inter-origines (CORS).",
+        "restoDesc" : "Premier projet où j'ai appris le responsive design et l'utilisation de librairies comme Bootstrap pour ajouter des composants et l'utilisation du SCSS"
     }
 }

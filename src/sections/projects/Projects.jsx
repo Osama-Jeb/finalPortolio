@@ -1,6 +1,7 @@
 import Project from "./components/Project";
 import ygoGif from "../../assets/images/projects/ygoPalette/ygoPalette.gif"
 import lionsGif from "../../assets/images/projects/lionsgeek/lionsgeek.gif"
+import restoGif from "../../assets/images/projects/lionresto/lionresto.gif"
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -20,7 +21,7 @@ const Projects = () => {
                 },
                 {
                     name: 'Breeze Auth',
-                    color: 'bg-[#8a94a6]',
+                    color: 'bg-[#8a94a6] text-gray-500',
                 },
                 {
                     name: 'FullCalendar',
@@ -41,7 +42,7 @@ const Projects = () => {
             desc: t("projects.paletteDesc"),
             techs: [
                 {
-                    name: 'React',
+                    name: 'ReactJS',
                     color: 'bg-[#00d8ff]',
                 },
                 {
@@ -59,27 +60,35 @@ const Projects = () => {
             ],
             preview: ygoGif
         },
-        // {
-        //     name: 'ygo-Palette Generator',
-        //     github: 'https://github.com/Osama-Jeb/ygo-palette',
-        //     website: 'https://ygo-palette-client.vercel.app/',
-        //     desc: 'This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.',
-        //     techs: [
-        //         {
-        //             name: 'React',
-        //             color: 'bg-[#00d8ff]',
-        //         },
-        //         {
-        //             name: 'Express',
-        //             color: "bg-[#f7e025]",
-        //         },
-        //         {
-        //             name: 'Tailwind',
-        //             color: 'bg-[#38bdf8]'
-        //         },
-        //     ],
-        //     preview: ygoGif
-        // },
+        {
+            name: 'LionsResto',
+            github: 'https://github.com/Osama-Jeb/LionResto',
+            website: 'https://osama-jeb.github.io/oussama_jebrane_lionsresto_final/',
+            desc: t("projects.restoDesc"),
+            techs: [
+                {
+                    name: 'HTML',
+                    color: 'bg-[#e44d26] text-white',
+                },
+                {
+                    name: 'CSS',
+                    color: 'bg-[#1172b8]'
+                },
+                {
+                    name: 'JavaScript',
+                    color: "bg-[#f7e025]",
+                },
+                {
+                    name: 'SCSS',
+                    color: 'bg-[#cc6699]'
+                },
+                {
+                    name: 'Bootstrap',
+                    color: 'bg-[#563d7c] text-white'
+                },
+            ],
+            preview: restoGif
+        },
     ]
     return (
         <section id="projects" className="mt-12">

@@ -10,7 +10,7 @@ const Navbar = (props) => {
 
     return (
         <>
-            <nav className="navbar bg-[#61616180] backdrop-blur-md sticky top-0 right-0 z-20 px-4 flex items-center justify-between">
+            <nav className="navbar rounded-full w-[90vw] mx-auto bg-[#61616180] backdrop-blur-md sticky top-[15px] right-0 z-20 px-4 flex items-center justify-between">
 
                 <Logo />
 
@@ -21,6 +21,8 @@ const Navbar = (props) => {
                     <ThemeSwap setTheme={props.setTheme} />
 
                 </div>
+
+                
                 <motion.div
                     style={{ scaleX: scrollYProgress }}
                     className="bg-[#FFA54F] z-50 fixed bottom-0 left-0 h-[0.5vh] w-full">

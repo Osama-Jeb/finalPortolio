@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
-import logo from "../../assets/images/skills/javascript-svgrepo-com.svg"
+import logo from "../../assets/images/skills/javascript.svg"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
-    const langs = ['JavaScript', 'TypeScript', 'php', 'Python']
+    const langs = ['HTML', 'CSS','JavaScript', 'TypeScript', 'php']
 
-    const skills = ['React', 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire'];
+    const skills = ['React', "Bootstrap", 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire'];
 
     const traite = ['hardWorker', 'quickLearner', 'problemSolver'];
 
@@ -32,7 +32,7 @@ const Hero = () => {
     const [t, i18n] = useTranslation("global");
 
     return (
-        <section id="hero">
+        <section id="hero" className="mt-5">
             <div className="flex items-center gap-5 flex-col text-center sm:flex-row sm:text-start sm:text-5xl text-3xl justify-between w-[90vw]">
                 <div className="w-[80%] sm:w-[50%]">
                     <p className="font-bold tracking-wide leading-relaxed">{t("hero.hello")}, <br />

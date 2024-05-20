@@ -1,13 +1,15 @@
-import python from "../../assets/images/skills/python-svgrepo-com.svg"
-import javascript from "../../assets/images/skills/javascript-svgrepo-com.svg"
-import php from "../../assets/images/skills/php-svgrepo-com.svg"
-import typescript from "../../assets/images/skills/typescript-svgrepo-com.svg"
+import html from "../../assets/images/skills/html.svg"
+import css from "../../assets/images/skills/css.svg"
+import javascript from "../../assets/images/skills/javascript.svg"
+import php from "../../assets/images/skills/php.svg"
+import typescript from "../../assets/images/skills/typescript.svg"
 
-import react from "../../assets/images/skills/react-svgrepo-com.svg"
-import laravel from "../../assets/images/skills/laravel-svgrepo-com.svg"
+import react from "../../assets/images/skills/react.svg"
+import laravel from "../../assets/images/skills/laravel.svg"
 import alpine from "../../assets/images/skills/Alpine.js.svg"
 import livewire from "../../assets/images/skills/Livewire.svg"
-import tailwind from "../../assets/images/skills/tailwind-svgrepo-com.svg"
+import tailwind from "../../assets/images/skills/tailwind.svg"
+import bootstrap from "../../assets/images/skills/bootstrap.svg"
 
 import git from "../../assets/images/skills/Git.svg"
 import github from "../../assets/images/skills/GitHub.svg"
@@ -19,19 +21,24 @@ const Skills = () => {
 
     const languages = [
         {
-            name: 'javascript',
+            name: 'HTML5',
+            image: html,
+            bg: 'border-[#e44d26] shadow-[#e44d26]'
+        },
+        {
+            name: 'CSS',
+            image: css,
+            bg: 'border-[#1172b8] shadow-[#1172b8]'
+        },
+        {
+            name: 'JavaScript',
             image: javascript,
             bg: 'border-[#f7e025] shadow-[#f7e025]'
         },
         {
-            name: 'typescript',
+            name: 'TypeScript',
             image: typescript,
             bg: 'border-[#3178c6] shadow-[#3178c6]'
-        },
-        {
-            name: 'python',
-            image: python,
-            bg: 'border-[#386d99] python-shadow'
         },
         {
             name: 'php',
@@ -47,14 +54,19 @@ const Skills = () => {
             bg: 'border-[#00d8ff] shadow-[#00d8ff]'
         },
         {
+            name: 'Bootstrap',
+            image: bootstrap,
+            bg: 'border-[#563d7c] shadow-[#563d7c]'
+        },
+        {
             name: 'Tailwind',
             image: tailwind,
-            bg: 'border-[#77c1d2] shadow-[#77c1d2]'
+            bg: 'border-[#307880] shadow-[#307880]'
         },
         {
             name: 'Alpine',
             image: alpine,
-            bg: 'border-[#38bdf8] shadow-[#77c1d2]'
+            bg: 'border-[#77c1d2] shadow-[#77c1d2]'
         },
         {
             name: 'Laravel',
@@ -75,7 +87,7 @@ const Skills = () => {
             bg: 'border-[#f05033] shadow-[#f05033]'
         },
         {
-            name: 'Github',
+            name: 'GitHub',
             image: github,
             bg: 'border-[#282828] shadow-[#a8a8a8]'
         },
@@ -83,7 +95,7 @@ const Skills = () => {
 
     const categories = [
         { title: 'Languages', skills: languages },
-        { title: 'Frameworks', skills: frameworks },
+        { title: 'Frameworks & Libraries', skills: frameworks },
         { title: 'Workflow', skills: worfkflows },
     ];
 
