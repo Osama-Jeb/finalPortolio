@@ -22,8 +22,8 @@ const CanvasBackground = () => {
             const radius = randomRange(1, 5);
             const x = randomRange(radius, canvas.width - radius);
             const y = randomRange(radius, canvas.height - radius);
-            const dx = randomRange(-2, 2);
-            const dy = randomRange(-2, 2);
+            const dx = randomRange(-3, 3);
+            const dy = randomRange(-3, 3);
             const color = `rgba(${122}, ${122}, ${122}, ${0.5})`;
 
             return { x, y, dx, dy, radius, color };

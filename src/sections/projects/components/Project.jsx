@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"
+import { motion } from "framer-motion"
 
 const Project = (props) => {
 
@@ -9,10 +10,21 @@ const Project = (props) => {
     const reverse = props.index % 2 === 0
     return (
         <div className={`mb-12 flex text-center text-balance sm:text-start items-center flex-col sm:flex-row gap-5 p-12 ${reverse ? 'sm:flex-row-reverse' : ''}`}>
-            <div className="shadow-2xl rounded-2xl">
+            <motion.div className="shadow-2xl rounded-2xl relative right-0"
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.4 }}
+                viewport={{ once: true }}
+            >
                 <img className="rounded-2xl" src={proj.preview} alt="" />
-            </div>
-            <div className={`flex flex-col gap-3 ${reverse ? '' : 'sm:items-end sm:text-end'}`}>
+            </motion.div>
+
+
+            <motion.div className={`flex flex-col gap-3 relative top-0 ${reverse ? '' : 'sm:items-end sm:text-end'}`}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1, delay: 0.4 }}>
                 <p className="text-3xl font-bold">{proj.name}</p>
 
                 <p>{proj.desc}</p>
@@ -27,6 +39,8 @@ const Project = (props) => {
                         )
                     }
                 </div>
+
+
                 <div className="flex items-center gap-4 mt-5 sm:justify-normal justify-around">
 
                     {
@@ -50,18 +64,18 @@ const Project = (props) => {
                             </div>
                         ) : (
                             <>
-                                <a 
-                                href={proj.website} 
-                                target="_blank" 
-                                rel="nonreferrer" 
-                                className="btn btn-neutral btn-outline rounded-2xl">
+                                <a
+                                    href={proj.website}
+                                    target="_blank"
+                                    rel="nonreferrer"
+                                    className="btn btn-neutral btn-outline rounded-2xl">
                                     <FaExternalLinkAlt /> Demo
                                 </a>
-                                <a 
-                                href={proj.github} 
-                                target="_blank" 
-                                rel="nonreferrer" 
-                                className="btn btn-neutral btn-outline rounded-2xl">
+                                <a
+                                    href={proj.github}
+                                    target="_blank"
+                                    rel="nonreferrer"
+                                    className="btn btn-neutral btn-outline rounded-2xl">
                                     <FaGithub /> Github
                                 </a>
                             </>
@@ -69,7 +83,7 @@ const Project = (props) => {
                     }
 
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

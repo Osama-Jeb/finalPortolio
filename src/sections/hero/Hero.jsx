@@ -30,6 +30,8 @@ const Hero = () => {
                     </div>
 
                 </div>
+
+                {/* Coder */}
                 <div className="text-start">
                     <div className="px-4 border-t-2 border-l border-r border-gray-600 lg:px-8 py-5"
                         style={{ borderTopColor: "#FFA54F" }}>
