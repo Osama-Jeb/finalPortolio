@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next";
 import logo from "../../assets/images/skills/javascript.svg"
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { TypeAnimation } from "react-type-animation";
+import Socials from "../../Socials";
 
 const Hero = () => {
     const langs = ['HTML', 'CSS','JavaScript', 'TypeScript', 'php']
@@ -13,21 +11,6 @@ const Hero = () => {
 
     const prm = ['hardWorker', 'quickLearner'];
 
-    const socials = [
-        {
-            link: 'https://github.com/Osama-Jeb',
-            icon: <FaGithub />
-            ,
-        },
-        {
-            link: 'https://www.linkedin.com/in/oussama-jebrane',
-            icon: <FaLinkedin />,
-        },
-        {
-            link: 'mailto:oussamajebrane98@gmail.com',
-            icon: <HiOutlineMail />,
-        },
-    ]
 
     const [t, i18n] = useTranslation("global");
 
@@ -37,41 +20,15 @@ const Hero = () => {
                 <div className="w-[80%] sm:w-[50%]">
                     <p className="font-bold tracking-wide leading-relaxed">{t("hero.hello")}, <br />
                         {t("hero.I")} <span className="text-[#FFA54F]">OUSSAMA JEBRANE</span>
-                        <br />
-                        {/* {t("hero.and")} &nbsp;
-                        <br className="" />
-                        <TypeAnimation
-                            sequence={[
-                                'Web Developer',
-                                1000, 
-                                'Problem Solver',
-                                1000,
-                                'Quick Learner',
-                                1000,
-                                'Hard Worker',
-                                1000
-                            ]}
-                            wrapper="span"
-                            speed={50}
-                            style={{ display: 'inline-block' }}
-                            repeat={Infinity}
-                            className="text-[#FFA54F] w-[100%]"
-                            deletionSpeed={15}
-                        /> */}
-
                     </p>
+
+
                     <div className="flex items-center justify-center gap-5 mt-5 sm:text-5xl text-3xl">
-                        {
-                            socials.map(social =>
-                                <>
-                                    <a href={social.link} className="hover:scale-125 hover:text-[#FFA54F]" target="_blank" rel="noreferrer">
-                                        {social.icon}
-                                    </a>
-                                </>
-                            )
-                        }
+                    
+                        <Socials />
 
                     </div>
+
                 </div>
                 <div className="text-start">
                     <div className="px-4 border-t-2 border-l border-r border-gray-600 lg:px-8 py-5"
@@ -98,12 +55,12 @@ const Hero = () => {
                                 <span className="text-gray-400">',</span>
                             </div>
                             <div className="ml-4 lg:ml-8 mr-2">
-                                <span className=" text-white">Languages:</span>
+                                <span className=" text-white">languages : </span>
                                 <span className="text-gray-400">['</span>
                                 {
                                     langs.map((lang, index) =>
 
-                                        <>
+                                        <span key={index}>
                                             <span className="text-amber-300">{lang}</span>
 
                                             {
@@ -113,7 +70,7 @@ const Hero = () => {
                                                     null
                                             }
 
-                                        </>
+                                        </span>
 
 
                                     )
@@ -121,12 +78,12 @@ const Hero = () => {
                                 <span className="text-gray-400">'],</span>
                             </div>
                             <div className="ml-4 lg:ml-8 mr-2">
-                                <span className=" text-white">skills:</span>
+                                <span className=" text-white">skills : </span>
                                 <span className="text-gray-400">['</span>
                                 {
                                     skills.map((skill, index) =>
 
-                                        <>
+                                        <span key={index}>
                                             <span className="text-amber-300">{skill}</span>
 
                                             {
@@ -135,8 +92,7 @@ const Hero = () => {
                                                     :
                                                     null
                                             }
-
-                                        </>
+                                        </span>
 
 
                                     )
@@ -146,14 +102,12 @@ const Hero = () => {
 
                             {
                                 traite.map((trait, index) =>
-                                    <>
-                                        <div>
-                                            <span className="ml-4 lg:ml-8 mr-2 text-white">{trait}:</span>
+                                        <div key={index}>
+                                            <span className="ml-4 lg:ml-8 mr-2 text-white">{trait} : </span>
                                             <span className="text-orange-400">true</span>
                                             <span className="text-gray-400">,</span>
                                         </div>
 
-                                    </>
                                 )
                             }
 
@@ -170,14 +124,14 @@ const Hero = () => {
                             {
                                 prm.map((element, index) =>
 
-                                    <>
+                                    <span key={index}>
 
                                         <div>
                                             <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
                                             <span className="mr-2 text-white">{element}</span>
                                             <span className="text-amber-300">&amp;&amp;</span>
                                         </div>
-                                    </>
+                                    </span>
                                 )
                             }
 

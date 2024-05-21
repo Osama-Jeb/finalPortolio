@@ -16,17 +16,17 @@ const Project = (props) => {
                 <p className="text-3xl font-bold">{proj.name}</p>
 
                 <p>{proj.desc}</p>
-                <p className="flex flex-wrap gap-3 items-center">{t("projects.made")}:
+                <div className="flex flex-wrap gap-3 items-center">{t("projects.made")}:
                     {
                         proj.techs.map((tech, index) =>
-                            <>
+                            <p key={index}>
                                 <span className={`btn btn-sm text-gray-800 font-bold ${tech.color} rounded-2xl`}>
                                     {tech.name}
                                 </span>
-                            </>
+                            </p>
                         )
                     }
-                </p>
+                </div>
                 <div className="flex items-center gap-4 mt-5 sm:justify-normal justify-around">
 
                     {

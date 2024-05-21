@@ -21,7 +21,7 @@ function App() {
   return (
     <>
     <div data-theme={theme} className='text-base-content'>
-      <Loading />
+      {/* <Loading /> */}
       <CanvasBackground />
 
       <div className='sm:block hidden'>

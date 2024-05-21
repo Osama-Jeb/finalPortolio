@@ -62,7 +62,7 @@ const Projects = () => {
         },
         {
             name: 'LionsResto',
-            github: 'https://github.com/Osama-Jeb/LionResto',
+            github: 'https://github.com/Osama-Jeb/oussama_jebrane_lionsresto_final',
             website: 'https://osama-jeb.github.io/oussama_jebrane_lionsresto_final/',
             desc: t("projects.restoDesc"),
             techs: [
@@ -99,9 +99,9 @@ const Projects = () => {
                 <div className="w-[99vw] flex flex-col">
                     {
                         projs.map((proj, index) =>
-                            <>
+                            <div key={index}>
                                 <Project proj={proj} index={index} />
-                            </>
+                            </div>
                         )
                     }
                 </div>

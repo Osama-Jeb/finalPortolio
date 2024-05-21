@@ -20,6 +20,6 @@
         "lionsNote" : "Since the project is private, I can't share the code but feel free to check the website or the Association.",
         "lionsDesc" : "This private project was built with the goal of managing reservations and appointments for the LionsGeek Association. Using FullCalendar to create and reserve private equipments as well as other functions.",
         "paletteDesc" : "This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.",
-        "restoDesc" : "First project where I learned about responsive design and using libraries like Bootstrap to add components and the use of the SCSS"
+        "restoDesc" : "First project where I learned about responsive design and using libraries like Bootstrap to add components and the use of scripting languages like SCSS"
     } 
 }
