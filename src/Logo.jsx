@@ -1,6 +1,6 @@
 const Logo = () => {
     return (
-        <>
+        <a href="#top">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width={70} viewBox="0 0 256.000000 227.000000"
                 preserveAspectRatio="xMidYMid meet">
@@ -40,7 +40,7 @@ l-108 0 -36 -75 c-67 -143 -188 -232 -347 -256 -187 -29 -373 70 -459 243 -18
 70 -8 105 -36 36 -73 37 -106 4z"/>
                 </g>
             </svg>
-        </>
+        </a>
     )
 }
 

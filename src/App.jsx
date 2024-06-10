@@ -27,7 +27,7 @@ function App() {
       <div className='sm:block hidden'>
         <AnimatedCursor
           innerSize={8}
-          outerSize={32}
+          outerSize={42}
           color='255, 165, 79'
           outerAlpha={0.2}
           innerScale={0.7}
@@ -35,10 +35,13 @@ function App() {
           clickables={[
             'a',
             'button',
-            '.link'
+            '.link',
+            'label',
+            'span',
+            'li'
           ]}
           outerStyle={{
-            border: '3px solid #FFA54F',
+            border: '1px solid #FFA54F',
           }}
           trailingSpeed={5}
         />

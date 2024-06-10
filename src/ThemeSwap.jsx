@@ -1,6 +1,6 @@
 const ThemeSwap = (props) => {
     return (
-        <label className="swap swap-rotate">
+        <label className="swap swap-rotate cursor-pointer">
 
             <input type="checkbox" className="theme-controller" onChange={(e) => {
 

@@ -10,7 +10,7 @@ const Navbar = (props) => {
 
     return (
         <>
-            <nav className="navbar rounded-full w-[90vw] mx-auto bg-[#61616180] backdrop-blur-md sticky top-[15px] right-0 z-20 px-4 flex items-center justify-between">
+            <nav className="navbar rounded-t-3xl w-[90vw] mx-auto bg-[#61616180] backdrop-blur-md sticky top-[15px] right-0 z-20 px-4 h-[1vh] flex items-center justify-between">
 
                 <Logo />
 

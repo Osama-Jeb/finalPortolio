@@ -13,10 +13,6 @@ body {
     font-family: 'mont' !important;
 }
 
-/* *{
-    outline: red 1px solid;
-} */
-
 a {
     transition: all 0.5s;
 }

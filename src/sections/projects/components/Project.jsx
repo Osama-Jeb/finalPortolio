@@ -31,11 +31,9 @@ const Project = (props) => {
                 <div className="flex flex-wrap gap-3 items-center">{t("projects.made")}:
                     {
                         proj.techs.map((tech, index) =>
-                            <p key={index}>
-                                <span className={`btn btn-sm text-gray-800 font-bold ${tech.color} rounded-2xl`}>
-                                    {tech.name}
-                                </span>
-                            </p>
+                            <span key={index} className={`btn btn-sm text-gray-800 font-bold ${tech.color} rounded-2xl`}>
+                                {tech.name}
+                            </span>
                         )
                     }
                 </div>

@@ -17,7 +17,7 @@ const Projects = () => {
             techs: [
                 {
                     name: 'Livewire',
-                    color: 'bg-[#ff2d20]',
+                    color: 'bg-[#ff2d20] text-white',
                 },
                 {
                     name: 'Breeze Auth',
@@ -72,7 +72,7 @@ const Projects = () => {
                 },
                 {
                     name: 'CSS',
-                    color: 'bg-[#1172b8]'
+                    color: 'bg-[#1172b8] text-white'
                 },
                 {
                     name: 'JavaScript',
@@ -80,7 +80,7 @@ const Projects = () => {
                 },
                 {
                     name: 'SCSS',
-                    color: 'bg-[#cc6699]'
+                    color: 'bg-[#cc6699] text-white'
                 },
                 {
                     name: 'Bootstrap',

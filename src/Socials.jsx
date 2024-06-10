@@ -13,7 +13,7 @@ const Socials = () => {
             icon: <FaLinkedin />,
         },
         {
-            link: 'mailto:oussamajebrane98@gmail.com',
+            link: 'mailto:jebrane.dev@gmail.com',
             icon: <HiOutlineMail />,
         },
         {
