@@ -17,8 +17,13 @@
         "title" : "Projets",
         "made": "Crée avec",
         "lionsNote": "Comme le projet est privé, je ne peux pas partager le code, mais n'hésitez pas à consulter le site Web ou l'Association.",
-        "lionsDesc": "Ce projet privé a été construit dans le but de gérer les réservations et les rendez-vous pour l'Association LionsGeek. Utilisation de FullCalendar pour créer et réserver des équipements privés ainsi que d'autres fonctions.",
-        "paletteDesc": "Ce site Web génère une palette de couleurs aléatoire basée sur les cartes Yu-Gi-Oh. Dans ce projet, j'ai appris sur les API et l'importance du partage des ressources inter-origines (CORS).",
-        "restoDesc" : "Premier projet où j'ai appris le responsive design et l'utilisation de librairies comme Bootstrap pour ajouter des composants et l'utilisation du SCSS"
+        "lionsDesc": "Notre équipe s'est lancée dans cette aventure exclusive dans le but de gérer efficacement les réservations et les rendez-vous pour l'association LionsGeek. En utilisant la puissance de FullCalendar et Breeze, nous avons développé un système transparent qui vous permet non seulement de créer et de gérer des réservations d'équipements privés, mais offre également une gamme d'autres fonctions utiles.",
+        "paletteDesc": "Trouvez une variété de palettes de couleurs inspirées des cartes Yu-Gi-Oh avec ce site Web innovant. Grâce à ce projet, j'ai acquis des informations précieuses sur les API et l'importance du 'Cross-Origin Resource Sharing' (CORS).",
+        "restoDesc" : "Mon tout premier projet où j'ai acquis des connaissances précieuses sur le design réactif et l'utilisation de bibliothèques telles que Bootstrap pour incorporer divers composants. De plus, j'ai plongé dans le monde des langages de script comme SCSS, ce qui a encore amélioré ma compréhension du développement Web.",
+        "blog" : "Une plateforme de blog où les membres peuvent créer des comptes, partager des articles écrits, des photos et des vidéos. Participez à des conversations animées grâce à notre fonction de chat, où vous pouvez échanger des messages, des images et même des documents PDF. Grâce à cet effort, j'ai acquis une expérience précieuse dans l'utilisation de Firebase pour les opérations backend, notamment l'authentification et le stockage de fichiers."
+    },
+    "contact" : {
+        "free" : "N'hésitez pas à m'envoyer un message ou à me contacter via les liens ci-dessous",
+        "send" : "ENVOYER"
     }
 }

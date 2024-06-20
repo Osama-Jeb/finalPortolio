@@ -28,7 +28,10 @@ const About = () => {
                             {t("about.first")}
                         </p>
                         <div className="sm:hidden sm:mt-0 mt-10 flex items-center justify-center">
-                            <img src={prof} className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer" width={250} alt="" />
+                            <img src={prof}
+                                className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+                                loading="lazy" width={250} alt="profile"
+                            />
                         </div>
 
                         <p className="text-balance w-[90vw] sm:w-[60vw] sm:mt-3 mt-10">
@@ -41,7 +44,10 @@ const About = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 1, delay: 0.4 }}
                     >
-                        <img src={prof} className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer" loading="lazy" width={250} alt="" />
+                        <img src={prof}
+                            className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+                            loading="lazy" width={250} alt="profile"
+                        />
                     </motion.div>
                 </div>
             </div>

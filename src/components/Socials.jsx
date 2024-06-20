@@ -22,17 +22,16 @@ const Socials = () => {
         },
     ]
     return (
-        <>
+
+        <div className="flex items-center gap-10 w-full justify-around">
             {
                 socials.map((social, index) =>
-                    <div key={index}>
-                        <a href={social.link} className="hover:scale-125 hover:text-[#FFA54F]" target="_blank" rel="noreferrer">
-                            {social.icon}
-                        </a>
-                    </div>
+                    <a href={social.link} key={index} className="hover:scale-125 hover:text-[#FFA54F]" target="_blank" rel="noreferrer">
+                        {social.icon}
+                    </a>
                 )
             }
-        </>
+        </div>
     )
 }
 

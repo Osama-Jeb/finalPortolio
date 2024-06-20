@@ -1,5 +1,6 @@
 import html from "../../assets/images/skills/html.svg"
 import css from "../../assets/images/skills/css.svg"
+import scss from "../../assets/images/skills/scss.svg"
 import javascript from "../../assets/images/skills/javascript.svg"
 import php from "../../assets/images/skills/php.svg"
 import typescript from "../../assets/images/skills/typescript.svg"
@@ -13,6 +14,7 @@ import bootstrap from "../../assets/images/skills/bootstrap.svg"
 
 import git from "../../assets/images/skills/Git.svg"
 import github from "../../assets/images/skills/GitHub.svg"
+import firebase from "../../assets/images/skills/firebase.svg"
 
 import { motion } from "framer-motion"
 import { useTranslation } from "react-i18next"
@@ -31,6 +33,11 @@ const Skills = () => {
             bg: 'border-[#1172b8] shadow-[#1172b8]'
         },
         {
+            name: 'SCSS',
+            image: scss,
+            bg: 'border-[#cc6699] shadow-[#cc6699]'
+        },
+        {
             name: 'JavaScript',
             image: javascript,
             bg: 'border-[#f7e025] shadow-[#f7e025]'
@@ -47,7 +54,7 @@ const Skills = () => {
         },
     ];
 
-    const frameworks = [
+    const frontend = [
         {
             name: 'ReactJS',
             image: react,
@@ -68,6 +75,9 @@ const Skills = () => {
             image: alpine,
             bg: 'border-[#77c1d2] shadow-[#77c1d2]'
         },
+    ];
+
+    const backend = [
         {
             name: 'Laravel',
             image: laravel,
@@ -78,9 +88,14 @@ const Skills = () => {
             image: livewire,
             bg: 'border-[#fb70a9] shadow-[#fb70a9]'
         },
-    ];
+        {
+            name: 'Firebase',
+            image: firebase,
+            bg: 'border-[#dd2c00] shadow-[#dd2c00]'
+        },
+    ]
 
-    const worfkflows = [
+    const others = [
         {
             name: 'Git',
             image: git,
@@ -91,12 +106,14 @@ const Skills = () => {
             image: github,
             bg: 'border-[#282828] shadow-[#a8a8a8]'
         },
+
     ]
 
     const categories = [
         { title: 'Languages', skills: languages },
-        { title: 'Frameworks & Libraries', skills: frameworks },
-        { title: 'Workflow', skills: worfkflows },
+        { title: 'Frontend', skills: frontend },
+        { title: 'Backend', skills: backend },
+        { title: 'Others', skills: others },
     ];
 
 
@@ -105,7 +122,6 @@ const Skills = () => {
         visible: {
             x: 0,
             opacity: 1,
-
         }
     };
 

@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import logo from "../../assets/images/skills/javascript.svg"
-import Socials from "../../Socials";
+import Socials from "../../components/Socials";
 
 const Hero = () => {
-    const langs = ['HTML', 'CSS','JavaScript', 'TypeScript', 'php']
+    const langs = ['HTML', 'CSS', 'SCSS','JavaScript', 'TypeScript', 'php']
 
-    const skills = ['React', "Bootstrap", 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire'];
+    const skills = ['React', "Bootstrap", 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire', 'Firebase'];
 
     const traite = ['hardWorker', 'quickLearner', 'problemSolver'];
 

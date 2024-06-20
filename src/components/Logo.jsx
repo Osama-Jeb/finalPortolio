@@ -2,7 +2,7 @@ const Logo = () => {
     return (
         <a href="#top">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width={70} viewBox="0 0 256.000000 227.000000"
+                width={60} viewBox="0 0 256.000000 227.000000"
                 preserveAspectRatio="xMidYMid meet">
                 <g transform="translate(0.000000,227.000000) scale(0.100000,-0.100000)"
                     fill="#000000" stroke="none">

@@ -1,25 +1,29 @@
 {
-    "hero" : {
-        "hello" : "Hello",
-        "I" : "I'm",
-        "and" : "And I'm a",
+    "hero": {
+        "hello": "Hello",
+        "I": "I'm",
+        "and": "And I'm a",
         "me": "Me"
-
     },
-    "about" : {
-        "title" : "About Me",
-        "first" : "I am a professional and enthusiastic programmer in my daily life. I love to learn and explore new technologies and am passionate about problem-solving.",
-        "second" : "My core skill is based on JavaScript. I am available for any kind of job opportunity that suits my skills and interests."
+    "about": {
+        "title": "About Me",
+        "first": "I am a professional and enthusiastic programmer in my daily life. I love to learn and explore new technologies and am passionate about problem-solving.",
+        "second": "My core skill is based on JavaScript. I am available for any kind of job opportunity that suits my skills and interests."
     },
     "skills": {
         "title": "Skills"
     },
-    "projects" : {
-        "title" : "Projects",
-        "made" : "Made with",
-        "lionsNote" : "Since the project is private, I can't share the code but feel free to check the website or the Association.",
-        "lionsDesc" : "This private project was built with the goal of managing reservations and appointments for the LionsGeek Association. Using FullCalendar to create and reserve private equipments as well as other functions.",
-        "paletteDesc" : "This Website Generates a random color palette based on Yu-Gi-Oh Cards. In this project I learned about API and the importance of Cross-Origin Resource Sharing.",
-        "restoDesc" : "First project where I learned about responsive design and using libraries like Bootstrap to add components and the use of scripting languages like SCSS"
-    } 
+    "projects": {
+        "title": "Projects",
+        "made": "Made with",
+        "lionsNote": "Since the project is private, I can't share the code but feel free to check the website or the Association.",
+        "lionsDesc": "Our team embarked on this exclusive venture with the aim of efficiently handling reservations and appointments for the esteemed LionsGeek Association. Leveraging the power of FullCalendar and Breeze, we have developed a seamless system that not only allows you to create and manage reservations for private equipment but also offers a range of other useful functions",
+        "paletteDesc": "Find a variety of color palettes inspired by Yu-Gi-Oh Cards with this innovative website. Through this project, I gained valuable insights into APIs and the significance of Cross-Origin Resource Sharing.",
+        "restoDesc": "My first ever project where I gained valuable knowledge about responsive design and the utilization of libraries such as Bootstrap to incorporate various components. Additionally, I delved into the world of scripting languages like SCSS, which further enhanced my understanding of web development.",
+        "blog": "A blog platform where members can create accounts, share written pieces, photos, and videos. Engage in lively conversations through our chat function, where you can exchange messages, images, and even PDF documents. Through this endeavor, I gained valuable experience in utilizing Firebase for backend operations, including authentication and file storage."
+    },
+    "contact" : {
+        "free" : "Feel Free to send me a message or to contact me via the links below",
+        "send" : "SEND"
+    }
 }

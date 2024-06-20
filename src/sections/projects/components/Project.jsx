@@ -16,18 +16,18 @@ const Project = (props) => {
                 transition={{ duration: 1, delay: 0.4 }}
                 viewport={{ once: true }}
             >
-                <img className="rounded-2xl" src={proj.preview} alt="" />
+                <img className="rounded-2xl" src={proj.preview} alt={proj.name} loading="lazy" />
             </motion.div>
 
 
-            <motion.div className={`flex flex-col gap-3 relative top-0 ${reverse ? '' : 'sm:items-end sm:text-end'}`}
+            <motion.div className={`flex w-fit flex-col gap-3 relative top-0 ${reverse ? '' : 'sm:items-end sm:text-end'}`}
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1, delay: 0.4 }}>
                 <p className="text-3xl font-bold">{proj.name}</p>
 
-                <p>{proj.desc}</p>
+                <p className="">{proj.desc}</p>
                 <div className="flex flex-wrap gap-3 items-center">{t("projects.made")}:
                     {
                         proj.techs.map((tech, index) =>
@@ -40,7 +40,6 @@ const Project = (props) => {
 
 
                 <div className="flex items-center gap-4 mt-5 sm:justify-normal justify-around">
-
                     {
                         proj.name.includes('LionsGeek') ? (
                             <div>

@@ -1,27 +1,27 @@
-
 import './App.css'
+import { useState } from 'react'
+
 import AnimatedCursor from 'react-animated-cursor'
 import Hero from './sections/hero/Hero'
 import Navbar from './sections/navbar/Navbar'
-import CanvasBackground from './CanvasBackground'
+import CanvasBackground from './components/CanvasBackground'
 import About from './sections/about/About'
 import Projects from './sections/projects/Projects'
 import Contact from './sections/contact/Contact'
 import Skills from './sections/skills/Skills'
-import Loading from './Loading'
-import { SpeedInsights } from "@vercel/speed-insights/react"
-import { useEffect, useState } from 'react'
+
+import Loading from './components/Loading'
 import Facts from './sections/facts/Facts'
 
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
-
   const [theme, setTheme] = useState('black');
 
   return (
     <>
     <div data-theme={theme} className='text-base-content'>
-      <Loading />
+      {/* <Loading /> */}
       <CanvasBackground />
 
       <div className='sm:block hidden'>

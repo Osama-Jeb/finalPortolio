@@ -1,7 +1,9 @@
 import { motion, useScroll } from "framer-motion";
-import Logo from "../../Logo";
-import LanguageSwapBtn from "../../LanguageSwapBtn";
-import ThemeSwap from "../../ThemeSwap";
+import Logo from "../../components/Logo";
+import LanguageSwapBtn from "../../components/LanguageSwapBtn";
+import ThemeSwap from "../../components/ThemeSwap";
+
+import cv from "../../assets/images/CV.pdf"
 
 
 
@@ -15,6 +17,12 @@ const Navbar = (props) => {
                 <Logo />
 
                 <div>
+                    {/* <div>
+                        <a href={cv} className="btn-sm btn btn-outline rounded-bl-2xl rounded-tr-2xl mr-3 tracking-widest text-lg" target="_blank" rel="nonreferrer">
+                            CV
+                        </a>
+                        
+                    </div> */}
 
                     <LanguageSwapBtn />
 
@@ -22,7 +30,7 @@ const Navbar = (props) => {
 
                 </div>
 
-                
+
                 <motion.div
                     style={{ scaleX: scrollYProgress }}
                     className="bg-[#FFA54F] z-50 fixed bottom-0 left-0 h-[0.5vh] w-full">
