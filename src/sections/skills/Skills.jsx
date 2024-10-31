@@ -32,11 +32,11 @@ const Skills = () => {
             image: css,
             bg: 'border-[#1172b8] shadow-[#1172b8]'
         },
-        {
-            name: 'SCSS',
-            image: scss,
-            bg: 'border-[#cc6699] shadow-[#cc6699]'
-        },
+        // {
+        //     name: 'SCSS',
+        //     image: scss,
+        //     bg: 'border-[#cc6699] shadow-[#cc6699]'
+        // },
         {
             name: 'JavaScript',
             image: javascript,
@@ -54,46 +54,39 @@ const Skills = () => {
         },
     ];
 
-    const frontend = [
+    const frameworks = [
         {
             name: 'ReactJS',
             image: react,
             bg: 'border-[#00d8ff] shadow-[#00d8ff]'
         },
         {
-            name: 'Bootstrap',
-            image: bootstrap,
-            bg: 'border-[#563d7c] shadow-[#563d7c]'
+            name: 'Laravel',
+            image: laravel,
+            bg: 'border-[#ff2d20] shadow-[#ff2d20]'
         },
         {
-            name: 'Tailwind',
-            image: tailwind,
-            bg: 'border-[#307880] shadow-[#307880]'
+            name: 'React Native',
+            image: react,
+            bg: 'border-[#00d8ff] shadow-[#00d8ff]'
         },
+        // {
+        //     name: 'Bootstrap',
+        //     image: bootstrap,
+        //     bg: 'border-[#563d7c] shadow-[#563d7c]'
+        // },
+        
         {
             name: 'Alpine',
             image: alpine,
             bg: 'border-[#77c1d2] shadow-[#77c1d2]'
-        },
-    ];
-
-    const backend = [
-        {
-            name: 'Laravel',
-            image: laravel,
-            bg: 'border-[#ff2d20] shadow-[#ff2d20]'
         },
         {
             name: 'Livewire',
             image: livewire,
             bg: 'border-[#fb70a9] shadow-[#fb70a9]'
         },
-        {
-            name: 'Firebase',
-            image: firebase,
-            bg: 'border-[#dd2c00] shadow-[#dd2c00]'
-        },
-    ]
+    ];
 
     const others = [
         {
@@ -106,13 +99,23 @@ const Skills = () => {
             image: github,
             bg: 'border-[#282828] shadow-[#a8a8a8]'
         },
+        {
+            name: 'Firebase',
+            image: firebase,
+            bg: 'border-[#ffa54f] shadow-[#ffa54f]'
+        },
+        {
+            name: 'Tailwind',
+            image: tailwind,
+            bg: 'border-[#307880] shadow-[#307880]'
+        },
 
     ]
 
     const categories = [
         { title: 'Languages', skills: languages },
-        { title: 'Frontend', skills: frontend },
-        { title: 'Backend', skills: backend },
+        { title: 'Frameworks', skills: frameworks },
+        // { title: 'Backend', skills: backend },
         { title: 'Others', skills: others },
     ];
 

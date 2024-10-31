@@ -5,7 +5,7 @@ import Socials from "../../components/Socials";
 const Hero = () => {
     const langs = ['HTML', 'CSS', 'SCSS','JavaScript', 'TypeScript', 'php']
 
-    const skills = ['React', "Bootstrap", 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire', 'Firebase'];
+    const skills = ['ReactJS', 'React Native', 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire', 'Firebase'];
 
     const traite = ['hardWorker', 'quickLearner', 'problemSolver'];
 

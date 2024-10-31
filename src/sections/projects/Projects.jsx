@@ -4,6 +4,8 @@ import lionsGif from "../../assets/images/projects/lionsgeek/lionsgeek.gif"
 import restoGif from "../../assets/images/projects/lionresto/lionresto.gif"
 import blogGif from "../../assets/images/projects/blog/blog.gif"
 
+import anime1 from "../../assets/images/projects/animelist/anime2.png"
+
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -18,7 +20,7 @@ const Projects = () => {
             desc: t("projects.lionsDesc"),
             techs: [
                 {
-                    name: 'Livewire',
+                    name: 'Laravel',
                     color: 'bg-[#ff2d20] text-white',
                 },
                 {
@@ -53,11 +55,36 @@ const Projects = () => {
                 },
                 {
                     name: 'Firebase',
-                    color: "bg-[#dd2c00] text-white",
+                    color: "bg-[#ffa54f] text-white",
                 },
             ],
             preview: blogGif
 
+        },
+        {
+            name: 'Anime Repo',
+            github: 'https://github.com/Osama-Jeb/animelist',
+            website: 'https://animelist-blue.vercel.app/',
+            desc: t("projects.paletteDesc"),
+            techs: [
+                {
+                    name: 'React Typescript',
+                    color: 'bg-[#00d8ff]',
+                },
+                {
+                    name: 'Firebase',
+                    color: "bg-[#f7e025]",
+                },
+                {
+                    name: 'Tailwind',
+                    color: 'bg-[#38bdf8]'
+                },
+                {
+                    name: 'Jikan API',
+                    color: 'bg-[#1ad1a5]'
+                },
+            ],
+            preview: anime1
         },
         {
             name: 'YGO-Palette Generator',
