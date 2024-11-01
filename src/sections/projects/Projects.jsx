@@ -5,6 +5,8 @@ import restoGif from "../../assets/images/projects/lionresto/lionresto.gif"
 import blogGif from "../../assets/images/projects/blog/blog.gif"
 
 import anime1 from "../../assets/images/projects/animelist/anime2.png"
+import casa1 from "../../assets/images/projects/casatourat/casa1.png"
+import africa1 from "../../assets/images/projects/yesafrica/africa3.png"
 
 import { useTranslation } from "react-i18next";
 
@@ -12,7 +14,7 @@ const Projects = () => {
 
     const [t, i18n] = useTranslation("global");
 
-    const projs = [
+    const profProjs = [
         {
             name: 'LionsGeek Management System',
             github: '',
@@ -40,6 +42,77 @@ const Projects = () => {
 
         },
         {
+            name: 'Casa Memoire',
+            github: '',
+            website: 'http://casatourat.ma/',
+            desc: t("projects.casa"),
+            techs: [
+                {
+                    name: 'React Native',
+                    color: 'bg-[#00d8ff]',
+                },
+                {
+                    name: 'Expo',
+                    color: 'bg-black text-white border-white'
+                },
+                {
+                    name: 'Laravel',
+                    color: 'bg-[#ff2d20] text-white',
+                },
+            ],
+            preview: casa1
+
+        },
+        {
+            name: 'YES Africa',
+            github: '',
+            website: 'https://youthempowermentsummit.africa/',
+            desc: t("projects.casa"),
+            techs: [
+                {
+                    name: 'ReactJS',
+                    color: 'bg-[#00d8ff]',
+                },
+                {
+                    name: 'Tailwind',
+                    color: 'bg-[#38bdf8]'
+                },
+                {
+                    name: 'Laravel',
+                    color: 'bg-[#ff2d20] text-white',
+                },
+            ],
+            preview: africa1
+        }
+    ]
+
+    const hobbyProjs = [
+        {
+            name: 'Anime Repo',
+            github: 'https://github.com/Osama-Jeb/animelist',
+            website: 'https://animelist-blue.vercel.app/',
+            desc: t("projects.animeRepo"),
+            techs: [
+                {
+                    name: 'React Typescript',
+                    color: 'bg-[#00d8ff]',
+                },
+                {
+                    name: 'Firebase',
+                    color: "bg-[#f7e025]",
+                },
+                {
+                    name: 'Tailwind',
+                    color: 'bg-[#38bdf8]'
+                },
+                {
+                    name: 'Jikan API',
+                    color: 'bg-[#1ad1a5]'
+                },
+            ],
+            preview: anime1
+        },
+        {
             name: 'Blog & Chat',
             github: 'https://github.com/Osama-Jeb/Blog',
             website: 'https://myblogproject.vercel.app/',
@@ -60,31 +133,6 @@ const Projects = () => {
             ],
             preview: blogGif
 
-        },
-        {
-            name: 'Anime Repo',
-            github: 'https://github.com/Osama-Jeb/animelist',
-            website: 'https://animelist-blue.vercel.app/',
-            desc: t("projects.paletteDesc"),
-            techs: [
-                {
-                    name: 'React Typescript',
-                    color: 'bg-[#00d8ff]',
-                },
-                {
-                    name: 'Firebase',
-                    color: "bg-[#f7e025]",
-                },
-                {
-                    name: 'Tailwind',
-                    color: 'bg-[#38bdf8]'
-                },
-                {
-                    name: 'Jikan API',
-                    color: 'bg-[#1ad1a5]'
-                },
-            ],
-            preview: anime1
         },
         {
             name: 'YGO-Palette Generator',
@@ -139,7 +187,7 @@ const Projects = () => {
                 },
             ],
             preview: restoGif
-        },
+        }
     ]
     return (
         <section id="projects" className="mt-12">
@@ -148,8 +196,18 @@ const Projects = () => {
                     <p className="secTitle w-fit font-bold underline text-4xl">{t("projects.title")}</p>
                 </div>
                 <div className="w-[99vw] flex flex-col">
+                    <h1 className="pl-12 text-2xl font-semibold underline">Profession Work: </h1>
                     {
-                        projs.map((proj, index) =>
+                        profProjs.map((proj, index) =>
+                            <div key={index}>
+                                <Project proj={proj} index={index} />
+                            </div>
+                        )
+                    }
+
+                    <h1 className="pl-12 text-2xl font-semibold underline">Hobby Projects: </h1>
+                    {
+                        hobbyProjs.map((proj, index) =>
                             <div key={index}>
                                 <Project proj={proj} index={index} />
                             </div>

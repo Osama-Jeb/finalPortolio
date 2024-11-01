@@ -3,10 +3,10 @@
         "hello": "Bonjour",
         "I": "Je m'appelle",
         "and": "Et je suis un",
-        "me" : "Moi"
+        "me": "Moi"
     },
-    "skills" : {
-        "title" : "Compétences"
+    "skills": {
+        "title": "Compétences"
     },
     "about": {
         "title": "À propos de moi",
@@ -14,16 +14,18 @@
         "second": "Ma compétence principale est basée sur JavaScript. Je suis disponible pour tout type d'opportunité d'emploi qui correspond à mes compétences et à mes intérêts."
     },
     "projects": {
-        "title" : "Projets",
+        "title": "Projets",
         "made": "Crée avec",
         "lionsNote": "Comme le projet est privé, je ne peux pas partager le code, mais n'hésitez pas à consulter le site Web ou l'Association.",
         "lionsDesc": "Notre équipe s'est lancée dans cette aventure exclusive dans le but de gérer efficacement les réservations et les rendez-vous pour l'association LionsGeek. En utilisant la puissance de FullCalendar et Breeze, nous avons développé un système transparent qui vous permet non seulement de créer et de gérer des réservations d'équipements privés, mais offre également une gamme d'autres fonctions utiles.",
+        "casa" : "Une application mobile réalisée avec React Native et Expo. Ce projet a été réalisé pour l'association Casa Mémoire afin de mettre en valeur au mieux la riche histoire de la Ville de Casablanca. J'ai acquis une immense expérience dans le développement d'applications mobiles et la conception d'interfaces conviviales, ainsi que dans l'apprentissage des différences entre les systèmes et exigences Android et iOS.",
+        "animeRepo": "Explorez et retrouvez toutes les informations et toutes les informations sur l'univers des anime, des mangas et des doubleurs. Ce site Web a été créé comme un passe-temps et grâce à lui, j'ai acquis de grandes compétences telles que le codage propre et l'utilisation du contexte pour éviter les répétitions, ainsi que quelques améliorations dans mes compétences Firebase et API. Faites-le pour jeter un œil et amusez-vous.",
         "paletteDesc": "Trouvez une variété de palettes de couleurs inspirées des cartes Yu-Gi-Oh avec ce site Web innovant. Grâce à ce projet, j'ai acquis des informations précieuses sur les API et l'importance du 'Cross-Origin Resource Sharing' (CORS).",
-        "restoDesc" : "Mon tout premier projet où j'ai acquis des connaissances précieuses sur le design réactif et l'utilisation de bibliothèques telles que Bootstrap pour incorporer divers composants. De plus, j'ai plongé dans le monde des langages de script comme SCSS, ce qui a encore amélioré ma compréhension du développement Web.",
-        "blog" : "Une plateforme de blog où les membres peuvent créer des comptes, partager des articles écrits, des photos et des vidéos. Participez à des conversations animées grâce à notre fonction de chat, où vous pouvez échanger des messages, des images et même des documents PDF. Grâce à cet effort, j'ai acquis une expérience précieuse dans l'utilisation de Firebase pour les opérations backend, notamment l'authentification et le stockage de fichiers."
+        "restoDesc": "Mon tout premier projet où j'ai acquis des connaissances précieuses sur le design réactif et l'utilisation de bibliothèques telles que Bootstrap pour incorporer divers composants. De plus, j'ai plongé dans le monde des langages de script comme SCSS, ce qui a encore amélioré ma compréhension du développement Web.",
+        "blog": "Une plateforme de blog où les membres peuvent créer des comptes, partager des articles écrits, des photos et des vidéos. Participez à des conversations animées grâce à notre fonction de chat, où vous pouvez échanger des messages, des images et même des documents PDF. Grâce à cet effort, j'ai acquis une expérience précieuse dans l'utilisation de Firebase pour les opérations backend, notamment l'authentification et le stockage de fichiers."
     },
-    "contact" : {
-        "free" : "N'hésitez pas à m'envoyer un message ou à me contacter via les liens ci-dessous",
-        "send" : "ENVOYER"
+    "contact": {
+        "free": "N'hésitez pas à m'envoyer un message ou à me contacter via les liens ci-dessous",
+        "send": "ENVOYER"
     }
 }
