@@ -8,7 +8,6 @@ import Contact from '../sections/contact/Contact'
 import Skills from '../sections/skills/Skills'
 
 import Loading from '../components/Loading'
-import Facts from '../sections/facts/Facts'
 import { useState } from 'react'
 
 const Home = () => {
@@ -47,7 +46,7 @@ const Home = () => {
                 <About />
                 <Skills />
                 <Projects />
-                <Facts />
+                {/* <Facts /> */}
                 <Contact />
             </div>
         </>

@@ -196,7 +196,7 @@ const Projects = () => {
                     <p className="secTitle w-fit font-bold underline text-4xl">{t("projects.title")}</p>
                 </div>
                 <div className="w-[99vw] flex flex-col">
-                    <h1 className="pl-12 text-2xl font-semibold underline">Profession Work: </h1>
+                    {/* <h1 className="pl-12 text-2xl font-semibold underline">Profession Work: </h1> */}
                     {
                         profProjs.map((proj, index) =>
                             <div key={index}>
@@ -205,7 +205,7 @@ const Projects = () => {
                         )
                     }
 
-                    <h1 className="pl-12 text-2xl font-semibold underline">Hobby Projects: </h1>
+                    {/* <h1 className="pl-12 text-2xl font-semibold underline">Hobby Projects: </h1> */}
                     {
                         hobbyProjs.map((proj, index) =>
                             <div key={index}>
