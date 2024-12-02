@@ -65,15 +65,6 @@ A fun project that generates color palettes based on cards from the famous Yu-Gi
 
 ![YuGiOh! Cards Palette Generator Preview](./src/assets/images/projects/ygoPalette/ygoPalette.gif)
 
----
-
-## [LionsResto](https://osama-jeb.github.io/oussama_jebrane_lionsresto_final/)
-My very first project: a fully responsive website made using only HTML, CSS, and JavaScript. It's designed for optimal viewing on laptops, tablets, and mobiles.
-
-![LionsResto Preview](./src/assets/images/projects/lionresto/lionresto.gif)
-
-
-
 
 
 
@@ -94,7 +85,7 @@ You can reach out to me through the following platforms:
 </div>
 
 <style>
-  img {
+  img{
     vertical-align: middle;
     margin-right: 8px;
   }

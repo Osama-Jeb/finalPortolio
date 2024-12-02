@@ -14,7 +14,7 @@ const Projects = () => {
 
     const [t, i18n] = useTranslation("global");
 
-    const profProjs = [
+    const allProjects = [
         {
             name: 'LionsGeek Management System',
             github: '',
@@ -35,7 +35,7 @@ const Projects = () => {
                 },
                 {
                     name: 'Tailwind',
-                    color: 'bg-[#38bdf8]'
+                    color: 'bg-[#30b8c7]'
                 },
             ],
             preview: lionsGif
@@ -53,7 +53,7 @@ const Projects = () => {
                 },
                 {
                     name: 'Expo',
-                    color: 'bg-black text-white border-white'
+                    color: 'bg-white'
                 },
                 {
                     name: 'Laravel',
@@ -67,7 +67,7 @@ const Projects = () => {
             name: 'YES Africa',
             github: '',
             website: 'https://youthempowermentsummit.africa/',
-            desc: t("projects.casa"),
+            desc: t("projects.africa"),
             techs: [
                 {
                     name: 'ReactJS',
@@ -75,7 +75,7 @@ const Projects = () => {
                 },
                 {
                     name: 'Tailwind',
-                    color: 'bg-[#38bdf8]'
+                    color: 'bg-[#30b8c7]'
                 },
                 {
                     name: 'Laravel',
@@ -83,10 +83,7 @@ const Projects = () => {
                 },
             ],
             preview: africa1
-        }
-    ]
-
-    const hobbyProjs = [
+        },
         {
             name: 'Anime Repo',
             github: 'https://github.com/Osama-Jeb/animelist',
@@ -99,11 +96,11 @@ const Projects = () => {
                 },
                 {
                     name: 'Firebase',
-                    color: "bg-[#f7e025]",
+                    color: "bg-alpha text-white",
                 },
                 {
                     name: 'Tailwind',
-                    color: 'bg-[#38bdf8]'
+                    color: 'bg-[#30b8c7]'
                 },
                 {
                     name: 'Jikan API',
@@ -124,71 +121,72 @@ const Projects = () => {
                 },
                 {
                     name: 'Tailwind',
-                    color: 'bg-[#38bdf8]'
+                    color: 'bg-[#30b8c7]'
                 },
                 {
                     name: 'Firebase',
-                    color: "bg-[#ffa54f] text-white",
+                    color: "bg-alpha text-white",
                 },
             ],
             preview: blogGif
 
         },
-        {
-            name: 'YGO-Palette Generator',
-            github: 'https://github.com/Osama-Jeb/ygo-palette',
-            website: 'https://ygo-palette-client.vercel.app/',
-            desc: t("projects.paletteDesc"),
-            techs: [
-                {
-                    name: 'ReactJS',
-                    color: 'bg-[#00d8ff]',
-                },
-                {
-                    name: 'Express',
-                    color: "bg-[#f7e025]",
-                },
-                {
-                    name: 'Tailwind',
-                    color: 'bg-[#38bdf8]'
-                },
-                {
-                    name: 'DaisyUI',
-                    color: 'bg-[#1ad1a5]'
-                },
-            ],
-            preview: ygoGif
-        },
-        {
-            name: 'LionsResto',
-            github: 'https://github.com/Osama-Jeb/oussama_jebrane_lionsresto_final',
-            website: 'https://osama-jeb.github.io/oussama_jebrane_lionsresto_final/',
-            desc: t("projects.restoDesc"),
-            techs: [
-                {
-                    name: 'HTML',
-                    color: 'bg-[#e44d26] text-white',
-                },
-                {
-                    name: 'CSS',
-                    color: 'bg-[#1172b8] text-white'
-                },
-                {
-                    name: 'JavaScript',
-                    color: "bg-[#f7e025]",
-                },
-                {
-                    name: 'SCSS',
-                    color: 'bg-[#cc6699] text-white'
-                },
-                {
-                    name: 'Bootstrap',
-                    color: 'bg-[#563d7c] text-white'
-                },
-            ],
-            preview: restoGif
-        }
+        // {
+        //     name: 'YGO-Palette Generator',
+        //     github: 'https://github.com/Osama-Jeb/ygo-palette',
+        //     website: 'https://ygo-palette-client.vercel.app/',
+        //     desc: t("projects.paletteDesc"),
+        //     techs: [
+        //         {
+        //             name: 'ReactJS',
+        //             color: 'bg-[#00d8ff]',
+        //         },
+        //         {
+        //             name: 'Express',
+        //             color: "bg-[#f7e025]",
+        //         },
+        //         {
+        //             name: 'Tailwind',
+        //             color: 'bg-[#30b8c7]'
+        //         },
+        //         {
+        //             name: 'DaisyUI',
+        //             color: 'bg-[#1ad1a5]'
+        //         },
+        //     ],
+        //     preview: ygoGif
+        // },
+        // {
+        //     name: 'LionsResto',
+        //     github: 'https://github.com/Osama-Jeb/oussama_jebrane_lionsresto_final',
+        //     website: 'https://osama-jeb.github.io/oussama_jebrane_lionsresto_final/',
+        //     desc: t("projects.restoDesc"),
+        //     techs: [
+        //         {
+        //             name: 'HTML',
+        //             color: 'bg-[#e44d26] text-white',
+        //         },
+        //         {
+        //             name: 'CSS',
+        //             color: 'bg-[#1172b8] text-white'
+        //         },
+        //         {
+        //             name: 'JavaScript',
+        //             color: "bg-[#f7e025]",
+        //         },
+        //         {
+        //             name: 'SCSS',
+        //             color: 'bg-[#cc6699] text-white'
+        //         },
+        //         {
+        //             name: 'Bootstrap',
+        //             color: 'bg-[#563d7c] text-white'
+        //         },
+        //     ],
+        //     preview: restoGif
+        // }
     ]
+
     return (
         <section id="projects" className="mt-12">
             <div>
@@ -196,23 +194,14 @@ const Projects = () => {
                     <p className="secTitle w-fit font-bold underline text-4xl">{t("projects.title")}</p>
                 </div>
                 <div className="w-[99vw] flex flex-col">
-                    {/* <h1 className="pl-12 text-2xl font-semibold underline">Profession Work: </h1> */}
                     {
-                        profProjs.map((proj, index) =>
+                        allProjects.map((proj, index) =>
                             <div key={index}>
                                 <Project proj={proj} index={index} />
                             </div>
                         )
                     }
 
-                    {/* <h1 className="pl-12 text-2xl font-semibold underline">Hobby Projects: </h1> */}
-                    {
-                        hobbyProjs.map((proj, index) =>
-                            <div key={index}>
-                                <Project proj={proj} index={index} />
-                            </div>
-                        )
-                    }
                 </div>
             </div>
         </section>

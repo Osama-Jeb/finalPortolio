@@ -16,17 +16,17 @@ const Socials = () => {
             link: 'mailto:jebrane.dev@gmail.com',
             icon: <HiOutlineMail />,
         },
-        {
-            link: 'https://wa.me/212696916944',
-            icon: <FaWhatsapp />,
-        },
+        // {
+        //     link: 'https://wa.me/212696916944',
+        //     icon: <FaWhatsapp />,
+        // },
     ]
     return (
 
         <div className="flex items-center gap-10 w-full justify-around">
             {
                 socials.map((social, index) =>
-                    <a href={social.link} key={index} className="hover:scale-125 hover:text-[#FFA54F]" target="_blank" rel="noreferrer">
+                    <a href={social.link} key={index} className="hover:scale-125 hover:text-alpha" target="_blank" rel="noreferrer">
                         {social.icon}
                     </a>
                 )

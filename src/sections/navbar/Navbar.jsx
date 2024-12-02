@@ -33,7 +33,7 @@ const Navbar = (props) => {
 
                 <motion.div
                     style={{ scaleX: scrollYProgress }}
-                    className="bg-[#FFA54F] z-50 fixed bottom-0 left-0 h-[0.5vh] w-full">
+                    className="bg-alpha z-50 fixed bottom-0 left-0 h-[0.5vh] w-full">
                 </motion.div>
 
             </nav>

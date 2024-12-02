@@ -1,16 +1,15 @@
 import html from "../../assets/images/skills/html.svg"
 import css from "../../assets/images/skills/css.svg"
-import scss from "../../assets/images/skills/scss.svg"
 import javascript from "../../assets/images/skills/javascript.svg"
 import php from "../../assets/images/skills/php.svg"
 import typescript from "../../assets/images/skills/typescript.svg"
+import expo from "../../assets/images/skills/expo.svg";
 
 import react from "../../assets/images/skills/react.svg"
 import laravel from "../../assets/images/skills/laravel.svg"
 import alpine from "../../assets/images/skills/Alpine.js.svg"
 import livewire from "../../assets/images/skills/Livewire.svg"
 import tailwind from "../../assets/images/skills/tailwind.svg"
-import bootstrap from "../../assets/images/skills/bootstrap.svg"
 
 import git from "../../assets/images/skills/Git.svg"
 import github from "../../assets/images/skills/GitHub.svg"
@@ -32,11 +31,6 @@ const Skills = () => {
             image: css,
             bg: 'border-[#1172b8] shadow-[#1172b8]'
         },
-        // {
-        //     name: 'SCSS',
-        //     image: scss,
-        //     bg: 'border-[#cc6699] shadow-[#cc6699]'
-        // },
         {
             name: 'JavaScript',
             image: javascript,
@@ -61,21 +55,15 @@ const Skills = () => {
             bg: 'border-[#00d8ff] shadow-[#00d8ff]'
         },
         {
+            name: 'Expo',
+            image: expo,
+            bg: 'border-[#b5b4b4] shadow-[#b5b4b4]'
+        },
+        {
             name: 'Laravel',
             image: laravel,
             bg: 'border-[#ff2d20] shadow-[#ff2d20]'
         },
-        {
-            name: 'React Native',
-            image: react,
-            bg: 'border-[#00d8ff] shadow-[#00d8ff]'
-        },
-        // {
-        //     name: 'Bootstrap',
-        //     image: bootstrap,
-        //     bg: 'border-[#563d7c] shadow-[#563d7c]'
-        // },
-        
         {
             name: 'Alpine',
             image: alpine,
@@ -102,20 +90,19 @@ const Skills = () => {
         {
             name: 'Firebase',
             image: firebase,
-            bg: 'border-[#ffa54f] shadow-[#ffa54f]'
+            bg: 'border-alpha shadow-alpha'
         },
         {
             name: 'Tailwind',
             image: tailwind,
-            bg: 'border-[#307880] shadow-[#307880]'
+            bg: 'border-[#30b8c7] shadow-[#30b8c7]'
         },
 
     ]
 
     const categories = [
         { title: 'Languages', skills: languages },
-        { title: 'Frameworks', skills: frameworks },
-        // { title: 'Backend', skills: backend },
+        { title: 'Frameworks && Libraries', skills: frameworks },
         { title: 'Others', skills: others },
     ];
 

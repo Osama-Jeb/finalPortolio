@@ -41,42 +41,76 @@ const Project = (props) => {
 
                 <div className="flex items-center gap-4 mt-5 sm:justify-normal justify-around">
                     {
-                        proj.name.includes('LionsGeek') ? (
+                        proj.name.includes('LionsGeek') ?
                             <div>
-                                <p className="mb-2">{t("projects.lionsNote")}</p>
                                 <a
                                     href={"https://lionsgeek.ma/"}
                                     target="_blank"
                                     rel="nonreferrer"
                                     className="btn btn-sm bg-yellow-400 text-black btn-outline rounded-2xl">
-                                    <FaExternalLinkAlt /> Association
+                                    <FaExternalLinkAlt /> Client: Lionsgeek
                                 </a>
                                 <a
                                     href={proj.website}
                                     target="_blank"
                                     rel="nonreferrer"
-                                    className="ms-2 mt-2 btn btn-neutral btn-outline rounded-2xl">
+                                    className="ms-2 mt-2 btn btn-sm btn-neutral  btn-outline rounded-2xl">
                                     <FaExternalLinkAlt /> LionsGeek Manager
                                 </a>
                             </div>
-                        ) : (
-                            <>
-                                <a
-                                    href={proj.website}
-                                    target="_blank"
-                                    rel="nonreferrer"
-                                    className="btn btn-neutral btn-outline rounded-2xl">
-                                    <FaExternalLinkAlt /> Demo
-                                </a>
-                                <a
-                                    href={proj.github}
-                                    target="_blank"
-                                    rel="nonreferrer"
-                                    className="btn btn-neutral btn-outline rounded-2xl">
-                                    <FaGithub /> Github
-                                </a>
-                            </>
-                        )
+                            : proj.name.includes('Casa') ?
+                                <div>
+                                    <a
+                                        href={"https://casamemoire.org/"}
+                                        target="_blank"
+                                        rel="nonreferrer"
+                                        className="btn btn-sm bg-[#1221af] rounded-2xl">
+                                        <FaExternalLinkAlt /> Client: Casa Memoire
+                                    </a>
+                                    <a
+                                        href={proj.website}
+                                        target="_blank"
+                                        rel="nonreferrer"
+                                        className="ms-2 mt-2 btn btn-sm btn-neutral  btn-outline rounded-2xl">
+                                        <FaExternalLinkAlt /> The Website
+                                    </a>
+                                </div>
+                                : proj.name.includes('Africa') ?
+                                <div>
+
+                                    <a
+                                        href={"https://jadara.foundation/"}
+                                        target="_blank"
+                                        rel="nonreferrer"
+                                        className="btn btn-sm bg-[#c19909] text-black rounded-2xl">
+                                        <FaExternalLinkAlt /> Client: Jadara
+                                    </a>
+                                    <a
+                                        href={proj.website}
+                                        target="_blank"
+                                        rel="nonreferrer"
+                                        className="ms-2 mt-2 btn btn-sm btn-neutral  btn-outline rounded-2xl">
+                                        <FaExternalLinkAlt /> The Website
+                                    </a>
+                                </div>
+                                    :
+                                    <>
+                                        <a
+                                            href={proj.website}
+                                            target="_blank"
+                                            rel="nonreferrer"
+                                            className="btn btn-sm btn-neutral btn-outline rounded-2xl">
+                                            <FaExternalLinkAlt /> Demo
+                                        </a>
+                                        <a
+                                            href={proj.github}
+                                            target="_blank"
+                                            rel="nonreferrer"
+                                            className="btn btn-sm btn-neutral btn-outline rounded-2xl">
+                                            <FaGithub /> Github
+                                        </a>
+                                    </>
+
                     }
 
                 </div>

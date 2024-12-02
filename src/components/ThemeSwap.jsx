@@ -5,7 +5,7 @@ const ThemeSwap = (props) => {
             <input type="checkbox" className="theme-controller" onChange={(e) => {
 
                 if (e.target.checked) {
-                    props.setTheme('garden')
+                    props.setTheme('lofi')
                 } else {
                     props.setTheme('black')
                 }

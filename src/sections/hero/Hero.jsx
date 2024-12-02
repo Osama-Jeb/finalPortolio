@@ -3,7 +3,7 @@ import logo from "../../assets/images/skills/javascript.svg"
 import Socials from "../../components/Socials";
 
 const Hero = () => {
-    const langs = ['HTML', 'CSS', 'SCSS','JavaScript', 'TypeScript', 'php']
+    const langs = ['HTML', 'CSS','JavaScript', 'TypeScript', 'php']
 
     const skills = ['ReactJS', 'React Native', 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire', 'Firebase'];
 
@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="flex items-center gap-5 flex-col text-center sm:flex-row sm:text-start sm:text-5xl text-3xl justify-between w-[90vw]">
                 <div className="w-[80%] sm:w-[50%]">
                     <p className="font-bold tracking-wide leading-relaxed">{t("hero.hello")}, <br />
-                        {t("hero.I")} <span className="text-[#FFA54F]">OUSSAMA JEBRANE</span>
+                        {t("hero.I")} <span className="text-alpha">OUSSAMA JEBRANE</span>
                     </p>
 
 
