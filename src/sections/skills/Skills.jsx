@@ -42,7 +42,7 @@ const Skills = () => {
             bg: 'border-[#3178c6] shadow-[#3178c6]'
         },
         {
-            name: 'php',
+            name: 'PHP',
             image: php,
             bg: 'border-[#7b7fb5] shadow-[#7b7fb5]'
         },
@@ -64,16 +64,16 @@ const Skills = () => {
             image: laravel,
             bg: 'border-[#ff2d20] shadow-[#ff2d20]'
         },
-        {
-            name: 'Alpine',
-            image: alpine,
-            bg: 'border-[#77c1d2] shadow-[#77c1d2]'
-        },
-        {
-            name: 'Livewire',
-            image: livewire,
-            bg: 'border-[#fb70a9] shadow-[#fb70a9]'
-        },
+        // {
+        //     name: 'Alpine',
+        //     image: alpine,
+        //     bg: 'border-[#77c1d2] shadow-[#77c1d2]'
+        // },
+        // {
+        //     name: 'Livewire',
+        //     image: livewire,
+        //     bg: 'border-[#fb70a9] shadow-[#fb70a9]'
+        // },
     ];
 
     const others = [

@@ -1,7 +1,5 @@
 import Project from "./components/Project";
-import ygoGif from "../../assets/images/projects/ygoPalette/ygoPalette.gif"
 import lionsGif from "../../assets/images/projects/lionsgeek/lionsgeek.gif"
-import restoGif from "../../assets/images/projects/lionresto/lionresto.gif"
 import blogGif from "../../assets/images/projects/blog/blog.gif"
 
 import anime1 from "../../assets/images/projects/animelist/anime2.png"
@@ -109,28 +107,28 @@ const Projects = () => {
             ],
             preview: anime1
         },
-        {
-            name: 'Blog & Chat',
-            github: 'https://github.com/Osama-Jeb/Blog',
-            website: 'https://myblogproject.vercel.app/',
-            desc: t("projects.blog"),
-            techs: [
-                {
-                    name: 'ReactJS',
-                    color: 'bg-[#00d8ff]',
-                },
-                {
-                    name: 'Tailwind',
-                    color: 'bg-[#30b8c7]'
-                },
-                {
-                    name: 'Firebase',
-                    color: "bg-alpha text-white",
-                },
-            ],
-            preview: blogGif
+        // {
+        //     name: 'Blog & Chat',
+        //     github: 'https://github.com/Osama-Jeb/Blog',
+        //     website: 'https://myblogproject.vercel.app/',
+        //     desc: t("projects.blog"),
+        //     techs: [
+        //         {
+        //             name: 'ReactJS',
+        //             color: 'bg-[#00d8ff]',
+        //         },
+        //         {
+        //             name: 'Tailwind',
+        //             color: 'bg-[#30b8c7]'
+        //         },
+        //         {
+        //             name: 'Firebase',
+        //             color: "bg-alpha text-white",
+        //         },
+        //     ],
+        //     preview: blogGif
 
-        },
+        // },
         // {
         //     name: 'YGO-Palette Generator',
         //     github: 'https://github.com/Osama-Jeb/ygo-palette',

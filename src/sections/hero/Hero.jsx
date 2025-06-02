@@ -3,9 +3,9 @@ import logo from "../../assets/images/skills/javascript.svg"
 import Socials from "../../components/Socials";
 
 const Hero = () => {
-    const langs = ['HTML', 'CSS','JavaScript', 'TypeScript', 'php']
+    const langs = ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'php']
 
-    const skills = ['ReactJS', 'React Native', 'Tailwind', 'Alpinejs', 'Laravel', 'Livewire', 'Firebase'];
+    const skills = ['ReactJS', 'React Native', 'Tailwind', 'Laravel', 'Firebase'];
 
     const traite = ['hardWorker', 'quickLearner', 'problemSolver'];
 
@@ -24,7 +24,7 @@ const Hero = () => {
 
 
                     <div className="flex items-center justify-center gap-5 mt-5 sm:text-5xl text-3xl">
-                    
+
                         <Socials />
 
                     </div>
@@ -104,11 +104,11 @@ const Hero = () => {
 
                             {
                                 traite.map((trait, index) =>
-                                        <div key={index}>
-                                            <span className="ml-4 lg:ml-8 mr-2 text-white">{trait} : </span>
-                                            <span className="text-orange-400">true</span>
-                                            <span className="text-gray-400">,</span>
-                                        </div>
+                                    <div key={index}>
+                                        <span className="ml-4 lg:ml-8 mr-2 text-white">{trait} : </span>
+                                        <span className="text-orange-400">true</span>
+                                        <span className="text-gray-400">,</span>
+                                    </div>
 
                                 )
                             }
@@ -141,7 +141,7 @@ const Hero = () => {
                                 <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
                                 <span className="mr-2 text-white">skills.length</span>
                                 <span className="mr-2 text-amber-300">&gt;=</span>
-                                <span className="text-orange-400">5</span>
+                                <span className="text-orange-400">4</span>
                             </div>
                             <div>
                                 <span className="ml-8 lg:ml-16 mr-2 text-gray-400">);</span>

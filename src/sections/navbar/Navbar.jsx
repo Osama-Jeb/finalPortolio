@@ -17,12 +17,12 @@ const Navbar = (props) => {
                 <Logo />
 
                 <div>
-                    {/* <div>
+                    <div>
                         <a href={cv} className="btn-sm btn btn-outline rounded-bl-2xl rounded-tr-2xl mr-3 tracking-widest text-lg" target="_blank" rel="nonreferrer">
                             CV
                         </a>
                         
-                    </div> */}
+                    </div>
 
                     <LanguageSwapBtn />
 
