@@ -74,6 +74,11 @@ const Skills = () => {
         //     image: livewire,
         //     bg: 'border-[#fb70a9] shadow-[#fb70a9]'
         // },
+        {
+            name: 'Tailwind',
+            image: tailwind,
+            bg: 'border-[#30b8c7] shadow-[#30b8c7]'
+        },
     ];
 
     const others = [
@@ -87,23 +92,18 @@ const Skills = () => {
             image: github,
             bg: 'border-[#282828] shadow-[#a8a8a8]'
         },
-        {
-            name: 'Firebase',
-            image: firebase,
-            bg: 'border-alpha shadow-alpha'
-        },
-        {
-            name: 'Tailwind',
-            image: tailwind,
-            bg: 'border-[#30b8c7] shadow-[#30b8c7]'
-        },
+        // {
+        //     name: 'Firebase',
+        //     image: firebase,
+        //     bg: 'border-alpha shadow-alpha'
+        // },
 
     ]
 
     const categories = [
         { title: 'Languages', skills: languages },
         { title: 'Frameworks && Libraries', skills: frameworks },
-        { title: 'Others', skills: others },
+        { title: 'Tools', skills: others },
     ];
 
 

@@ -1,16 +1,16 @@
 import { useTranslation } from "react-i18next"
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa"
 import { motion } from "framer-motion"
+import { NavLink } from "react-router-dom";
 
-const Project = (props) => {
+const Project = ({ proj, index }) => {
 
     const [t, i18n] = useTranslation("global");
 
-    const proj = props.proj
-    const reverse = props.index % 2 === 0
+    const reverse = index % 2 === 0
     return (
         <div className={`mb-12 flex text-center text-balance sm:text-start items-center flex-col sm:flex-row gap-5 p-12 ${reverse ? 'sm:flex-row-reverse' : ''}`}>
-            <motion.div className="shadow-2xl rounded-2xl relative right-0"
+            <motion.div className="shadow-2xl rounded-2xl relative right-0 group"
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: 0.4 }}
@@ -20,7 +20,8 @@ const Project = (props) => {
             </motion.div>
 
 
-            <motion.div className={`flex w-fit flex-col gap-3 relative top-0 ${reverse ? '' : 'sm:items-end sm:text-end'}`}
+            <motion.div
+                className={`flex w-fit flex-col gap-3 relative top-0 ${reverse ? '' : 'sm:items-end sm:text-end'}`}
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -40,79 +41,22 @@ const Project = (props) => {
 
 
                 <div className="flex items-center gap-4 mt-5 sm:justify-normal justify-around">
-                    {
-                        proj.name.includes('LionsGeek') ?
-                            <div>
-                                <a
-                                    href={"https://lionsgeek.ma/"}
-                                    target="_blank"
-                                    rel="nonreferrer"
-                                    className="btn btn-sm bg-yellow-400 text-black btn-outline rounded-2xl">
-                                    <FaExternalLinkAlt /> Client: Lionsgeek
-                                </a>
-                                <a
-                                    href={proj.website}
-                                    target="_blank"
-                                    rel="nonreferrer"
-                                    className="ms-2 mt-2 btn btn-sm btn-neutral  btn-outline rounded-2xl">
-                                    <FaExternalLinkAlt /> LionsGeek Manager
-                                </a>
-                            </div>
-                            : proj.name.includes('Casa') ?
-                                <div>
-                                    <a
-                                        href={"https://casamemoire.org/"}
-                                        target="_blank"
-                                        rel="nonreferrer"
-                                        className="btn btn-sm bg-[#1221af] rounded-2xl">
-                                        <FaExternalLinkAlt /> Client: Casa Memoire
-                                    </a>
-                                    <a
-                                        href={proj.website}
-                                        target="_blank"
-                                        rel="nonreferrer"
-                                        className="ms-2 mt-2 btn btn-sm btn-neutral  btn-outline rounded-2xl">
-                                        <FaExternalLinkAlt /> The Website
-                                    </a>
-                                </div>
-                                : proj.name.includes('Africa') ?
-                                <div>
-
-                                    <a
-                                        href={"https://jadara.foundation/"}
-                                        target="_blank"
-                                        rel="nonreferrer"
-                                        className="btn btn-sm bg-[#c19909] text-black rounded-2xl">
-                                        <FaExternalLinkAlt /> Client: Jadara
-                                    </a>
-                                    <a
-                                        href={proj.website}
-                                        target="_blank"
-                                        rel="nonreferrer"
-                                        className="ms-2 mt-2 btn btn-sm btn-neutral  btn-outline rounded-2xl">
-                                        <FaExternalLinkAlt /> The Website
-                                    </a>
-                                </div>
-                                    :
-                                    <>
-                                        <a
-                                            href={proj.website}
-                                            target="_blank"
-                                            rel="nonreferrer"
-                                            className="btn btn-sm btn-neutral btn-outline rounded-2xl">
-                                            <FaExternalLinkAlt /> Demo
-                                        </a>
-                                        <a
-                                            href={proj.github}
-                                            target="_blank"
-                                            rel="nonreferrer"
-                                            className="btn btn-sm btn-neutral btn-outline rounded-2xl">
-                                            <FaGithub /> Github
-                                        </a>
-                                    </>
-
-                    }
-
+                    <div>
+                        <a
+                            href={proj.client ? proj.clientWebsite : proj.website}
+                            target="_blank"
+                            rel="nonreferrer"
+                            className="btn btn-sm btn-outline bg-white text-black rounded-2xl">
+                            <FaExternalLinkAlt /> {proj.client ? 'Client ' + proj.client : 'Demo'}
+                        </a>
+                        <a
+                            href={proj.client ? proj.website : proj.github}
+                            target="_blank"
+                            rel="nonreferrer"
+                            className="ms-2 mt-2 btn btn-sm btn-neutral  btn-outline rounded-2xl">
+                            <FaExternalLinkAlt /> {proj.client ? 'The Website' : 'Github Repository'}
+                        </a>
+                    </div>
                 </div>
             </motion.div>
         </div>

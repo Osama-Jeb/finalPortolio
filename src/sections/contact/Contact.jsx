@@ -54,11 +54,11 @@ const Contact = () => {
 
                     <form ref={form} onSubmit={sendEmail} className="flex items-center flex-col gap-4 sm:w-[50%] w-full">
 
-                        <input type="text" name="from_name" className="w-full p-2 rounded bg-transparent border-2 border-neutral" placeholder="Name..." />
+                        <input type="text" name="from_name" required className="w-full p-2 rounded bg-transparent border-2 border-neutral" placeholder="Name..." />
 
-                        <input type="email" name="from_email" className="w-full p-2 rounded bg-transparent border-2 border-neutral" placeholder="Email..." />
+                        <input type="email" name="from_email" required className="w-full p-2 rounded bg-transparent border-2 border-neutral" placeholder="Email..." />
 
-                        <textarea name="message" className="w-full p-2 rounded bg-transparent border-2 border-neutral" placeholder="Message..." />
+                        <textarea name="message" required className="w-full p-2 rounded bg-transparent border-2 border-neutral" placeholder="Message..." />
                         <button type="submit" disabled={loading} className="btn  w-full  btn-base-content  font-bold rounded tracking-widest text-lg">
                             {
                                 loading ? <><span class="loading loading-ring loading-md"></span>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const CanvasBackground = () => {
     const canvasRef = useRef(null);
@@ -19,11 +19,11 @@ const CanvasBackground = () => {
 
         // Function to create a new circle
         function createCircle() {
-            const radius = randomRange(1, 5);
+            const radius = randomRange(1, 3);
             const x = randomRange(radius, canvas.width - radius);
             const y = randomRange(radius, canvas.height - radius);
-            const dx = randomRange(-3, 3);
-            const dy = randomRange(-3, 3);
+            const dx = randomRange(-1, 0);
+            const dy = randomRange(-1, 0);
             const color = `rgba(${122}, ${122}, ${122}, ${0.5})`;
 
             return { x, y, dx, dy, radius, color };
@@ -71,10 +71,9 @@ const CanvasBackground = () => {
         // Start animation
         animate();
 
-        // Clean up function to cancel animation frame on component unmount
         return () => cancelAnimationFrame(animationFrameId);
 
-    }, []); // Empty dependency array to run effect only once on component mount
+    }, []); 
 
     return <canvas ref={canvasRef} className='fixed top-0 right-0' />;
 };
